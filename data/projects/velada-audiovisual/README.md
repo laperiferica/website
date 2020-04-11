@@ -1,11 +1,8 @@
 ---
-slug: taste-of-diversity
-title: '"Taste of diversity"'
+slug: velada-audiovisual
+title: Velada Audiovisual
 image: featured.jpg
 ---
 
-"Taste of diversity: art, enviroment & gastronomy", es una iniciativa organizada
-por la asociación Alemana Omse e.V, a través de nuestro experto en programas
-Europeos Alberto Sánchez y la asociación La Periférica. 14 alumnos y alumnas del
-IES Almeraya han viajado a Marruecos para vivir dos semanas de intercambio con
-jóvenes alemanes y marroquíes, dentro del programa Erasmus+.
+Proyección de cortometrajes de cine social en colaboración con CIC BATÁ y el
+museo de Almería.

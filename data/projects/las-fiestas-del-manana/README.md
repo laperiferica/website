@@ -1,12 +1,9 @@
 ---
-slug: erasmus+
-title: Erasmus +
+slug: las-fiestas-del-mañana
+title: Las fiestas del mañana
 image: featured.jpg
 ---
 
-Erasmus es el Programa de educación, formación, juventud y deporte de la
-Comisión Europea para el período 2014-2020. Erasmus + ofrece más oportunidades
-para la movilidad y la cooperación en los sectores de educación, formación y
-juventud y es más fácil de acceder que sus predecesores. El programa está
-abierto a estudiantes, aprendices, maestros, profesores, jóvenes, voluntarios,
-trabajadores juveniles y personas que trabajan en el deporte.
+La Periférica colabora en la organización de este mini-festival en la sala
+Madchester Club de Almería. Con las actuaciones de Loudly, Uniforms y
+[Theoldestradioshow](https://www.facebook.com/theoldestradioshow/?__tn__=K-R&eid=ARCPaO4-ESjqvDMqequYlnZKi2tqxepQBTQB34hBL-xNur6LIYt-dDYsKSMWKwuMgVU546J21s55b3KU&fref=mentions).
