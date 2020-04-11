@@ -13,7 +13,7 @@ const StyledLayout = styled.div`
   grid-template-rows: auto;
 `;
 
-const Layout = ({ children, header }) => {
+const Layout = ({ children }) => {
   const {
     site: { siteMetadata: meta },
   } = useStaticQuery(graphql`
@@ -28,7 +28,7 @@ const Layout = ({ children, header }) => {
 
   return (
     <StyledLayout>
-      <Header title={meta.title} small={header === 'small'} />
+      <Header title={meta.title} />
       <main>{children}</main>
       <Footer title={meta.title} />
       <Go2Top />
@@ -38,7 +38,6 @@ const Layout = ({ children, header }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-  header: PropTypes.string,
 };
 
 export default Layout;

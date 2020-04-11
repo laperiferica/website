@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import Container from '../../Container';
 import Item from './Item';
 
 const StyledProjects = styled.section`
@@ -29,35 +28,28 @@ const Projects = () => {
               title
               image {
                 childImageSharp {
-                  fluid(quality: 95) {
-                    ...GatsbyImageSharpFluid_withWebp
+                  fixed(quality: 95, width: 320, height: 200) {
+                    ...GatsbyImageSharpFixed_withWebp
                   }
                 }
               }
             }
-            html
+            excerpt
           }
         }
       }
     }
   `);
   return (
-    <Container id={'proyectos'}>
-      <h2>Proyectos</h2>
-      <StyledProjects>
-        {edges
-          .map((x) => x.node)
-          .map((x, idx) => (
-            <div key={idx}>
-              <Item
-                title={x.frontmatter.title}
-                image={x.frontmatter.image}
-                content={x.html}
-              />
-            </div>
-          ))}
-      </StyledProjects>
-    </Container>
+    <StyledProjects>
+      {edges
+        .map((x) => x.node)
+        .map((x, idx) => (
+          <div key={idx}>
+            <Item {...x.frontmatter} content={x.excerpt} />
+          </div>
+        ))}
+    </StyledProjects>
   );
 };
 

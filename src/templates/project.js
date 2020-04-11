@@ -14,7 +14,7 @@ const ProjectPage = ({
     markdownRemark: { frontmatter, html },
   },
 }) => (
-  <Layout header={'small'}>
+  <Layout>
     <Container>
       <StyleArticle>
         <GatsbyImage fluid={frontmatter.image.childImageSharp.fluid} />

@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import Container from '../../Container';
 import Member from './Member';
 
 const StyledTeam = styled.section`
@@ -56,24 +55,17 @@ const Team = () => {
     }
   `);
   return (
-    <Container id={'equipo'}>
-      <StyledTeam>
-        <h2>Equipo</h2>
-        <ul>
-          {edges
-            .map((x) => x.node)
-            .map((x, idx) => (
-              <li key={idx}>
-                <Member
-                  name={x.frontmatter.name}
-                  image={x.frontmatter.image}
-                  tasks={x.frontmatter.tasks}
-                />
-              </li>
-            ))}
-        </ul>
-      </StyledTeam>
-    </Container>
+    <StyledTeam>
+      <ul>
+        {edges
+          .map((x) => x.node)
+          .map((x, idx) => (
+            <li key={idx}>
+              <Member {...x.frontmatter} />
+            </li>
+          ))}
+      </ul>
+    </StyledTeam>
   );
 };
 

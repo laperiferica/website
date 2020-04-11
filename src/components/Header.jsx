@@ -7,21 +7,19 @@ import Menu from './Menu';
 
 const StyledHeader = styled.header``;
 
-const Header = ({ title, small }) => (
+const Header = ({ title }) => (
   <StyledHeader>
-    <Title title={title} small={small} />
+    <Title title={title} />
     <Menu />
   </StyledHeader>
 );
 
 Header.propTypes = {
   title: PropTypes.string,
-  small: PropTypes.bool,
 };
 
 Header.defaultProps = {
   title: '',
-  small: false,
 };
 
 export default Header;

@@ -6,9 +6,14 @@ import styled from 'styled-components';
 import logo from '../images/logo.png';
 
 const StyledTitle = styled.div`
-  ${(props) =>
-    !props.small ? 'height: calc(100vh - 88px);' : 'height: 400px;'}
+  height: 400px;
   background: black;
+  background: linear-gradient(
+    0deg,
+    rgba(50, 50, 50, 1) 0%,
+    rgba(0, 0, 0, 1) 36%,
+    rgba(0, 0, 0, 1) 100%
+  );
   display: grid;
   justify-content: center;
   align-content: center;
@@ -20,8 +25,8 @@ const StyledTitle = styled.div`
   }
 `;
 
-const Title = ({ title, small }) => (
-  <StyledTitle small={small}>
+const Title = ({ title }) => (
+  <StyledTitle>
     <Link to={'/'}>
       <img src={logo} alt={title} />
     </Link>
@@ -30,7 +35,6 @@ const Title = ({ title, small }) => (
 
 Title.propTypes = {
   title: PropTypes.string,
-  small: PropTypes.bool,
 };
 
 export default Title;

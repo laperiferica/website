@@ -11,22 +11,22 @@ html {
   overflow-y: scroll;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  font-size: 100%;
 }
 
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
   font-size: 1em; /* 16px */
+  text-rendering: optimizeLegibility;
   color: var(--text-color);
-  padding: 0;
 }
 
 button,
 a {
   transition: all 0.18s ease-out;
   color: var(--primary-color);
-  text-decoration: none;
-  border-bottom: 1px dashed black;
   &:focus {
     outline: none;
   }
@@ -42,11 +42,6 @@ img {
   margin-bottom: 1rem;
 }
 
-hr {
-  border: 0px;
-  border-bottom: 1px solid lightgrey;
-}
-
 h1,
 h2,
 h3,
@@ -57,7 +52,6 @@ h6 {
   font-weight: normal;
   font-style: normal;
   padding: 0;
-  text-rendering: optimizeLegibility;
   line-height: 1.1;
   text-transform: uppercase;
 }
@@ -91,10 +85,6 @@ blockquote {
   margin-bottom: 1.45rem;
 }
 
-p {
-  text-align: justify;
-}
-
 ul {
   padding-left: 1rem;
 }
@@ -103,29 +93,9 @@ blockquote {
   font-style: italic;
   margin-left: 0;
   padding-left: 1rem;
-  border-left: 3px solid #ccc;
+  border-left: 3px solid var(--text-color);
 }
 
-.footnotes {
-  margin: 2rem 0;
-  ol {
-    margin: 0;
-    padding: 0 0 0 1rem;
-    li {
-      vertical-align: top;
-      p {
-        display: inline;
-        margin: 0;
-      }
-      a {
-        display: inline;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
+iframe {
+  max-width: 572px;
 }

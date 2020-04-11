@@ -14,7 +14,7 @@ const TeamPage = ({
     markdownRemark: { frontmatter, html },
   },
 }) => (
-  <Layout header={'small'}>
+  <Layout>
     <Container>
       <StyleArticle>
         <GatsbyImage fixed={frontmatter.image.childImageSharp.fixed} />

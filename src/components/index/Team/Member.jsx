@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import GatsbyImage from 'gatsby-image';
+import { Link } from 'gatsby';
 
 const StyledMember = styled.div`
   > ul {
@@ -16,10 +17,17 @@ const StyledMember = styled.div`
   }
 `;
 
-const Member = ({ image, name, tasks }) => (
+const Member = ({ slug, image, name, tasks }) => (
   <StyledMember>
-    <GatsbyImage fixed={image.childImageSharp.fixed} alt={`Foto de ${name}`} />
-    <h3>{name}</h3>
+    <Link to={`/team/${slug}`}>
+      <GatsbyImage
+        fixed={image.childImageSharp.fixed}
+        alt={`Foto de ${name}`}
+      />
+    </Link>
+    <Link to={`/team/${slug}`}>
+      <h3>{name}</h3>
+    </Link>
     <ul>
       {tasks.map((x, idx) => (
         <li key={idx}>{x}</li>
@@ -29,9 +37,10 @@ const Member = ({ image, name, tasks }) => (
 );
 
 Member.propTypes = {
+  slug: PropTypes.string,
   image: PropTypes.object,
   name: PropTypes.string,
-  tasks: PropTypes.array
+  tasks: PropTypes.array,
 };
 
 export default Member;
