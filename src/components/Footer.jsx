@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Social from './Social';
 
-import Container from './Container';
+import meta from '../../data/static/meta';
 
 const StyledFooter = styled.footer`
   margin: 0;
@@ -11,22 +12,38 @@ const StyledFooter = styled.footer`
   color: white;
   text-transform: uppercase;
   text-align: center;
+  a {
+    text-transform: lowercase;
+    color: white;
+  }
 `;
 
 const Footer = ({ title }) => (
   <StyledFooter>
-    <Container>
+    <p>
+      <a
+        href={`mailto:${meta.email}`}
+        target={'_blank'}
+        rel={'noopener noreferrer'}
+      >
+        {meta.email}
+      </a>
+    </p>
+    <p>
+      <Social size={2} color={'white'} />
+    </p>
+    <p>
       {title} · Cultura contemporánea {new Date().getFullYear()}
-    </Container>
+    </p>
   </StyledFooter>
 );
 
 Footer.propTypes = {
-  title: PropTypes.string
+  title: PropTypes.string,
 };
 
 Footer.defaultProps = {
-  title: ''
+  title: '',
 };
 
 export default Footer;
