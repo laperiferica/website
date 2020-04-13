@@ -6,22 +6,22 @@ export default {
   social: [
     {
       url: 'https://www.youtube.com/channel/UCo0LamWRwdLSfO3o_Ob3-WQ',
-      icon: <FaYoutube size={54} />,
+      icon: <FaYoutube />,
       title: 'Youtube',
     },
     {
       url: 'https://twitter.com/LaPerifericaCC',
-      icon: <FaTwitter size={54} />,
+      icon: <FaTwitter />,
       title: 'Twitter',
     },
     {
       url: 'https://www.instagram.com/LaPerifericaCC/',
-      icon: <FaInstagram size={54} />,
+      icon: <FaInstagram />,
       title: 'Instagram',
     },
     {
       url: 'https://www.facebook.com/LaPerifericaCC/',
-      icon: <FaFacebook size={54} />,
+      icon: <FaFacebook />,
       title: 'Facebook',
     },
   ],
