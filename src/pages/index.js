@@ -10,7 +10,7 @@ import Section from '../components/Section';
 const IndexPage = () => (
   <Layout>
     <SEO title="Inicio" />
-    <Section id={'proyectos'} title={'Proyectos'}>
+    <Section id={'latest-projects'} title={'Últimos Proyectos'}>
       <Projects />
     </Section>
     <Section id={'quienes-somos'} title={'Quienes somos'}>
