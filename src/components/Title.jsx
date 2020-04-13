@@ -7,13 +7,6 @@ import logo from '../images/logo.png';
 
 const StyledTitle = styled.div`
   height: 400px;
-  background: black;
-  background: linear-gradient(
-    0deg,
-    rgba(50, 50, 50, 1) 0%,
-    rgba(0, 0, 0, 1) 36%,
-    rgba(0, 0, 0, 1) 100%
-  );
   display: grid;
   justify-content: center;
   align-content: center;
