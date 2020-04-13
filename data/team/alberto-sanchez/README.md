@@ -1,6 +1,7 @@
 ---
 slug: alberto-sanchez
 name: Alberto Sánchez
+email: alberto[a]laperifericacc.com
 tasks:
   - Gesión Cultural
   - Voluntariado

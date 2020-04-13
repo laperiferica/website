@@ -1,6 +1,7 @@
 ---
 slug: jose-rueda
 name: Jose Rueda
+email: jose[a]laperifericacc.com
 tasks:
   - Radio/Música
   - Audiovisuales

@@ -8,7 +8,7 @@ const links = [
   { title: 'Proyectos', to: '/#proyectos' },
   { title: 'Quienes somos', to: '/#quienes-somos' },
   { title: 'Equipo', to: '/#equipo' },
-  { title: 'Contacta', to: '/#contacta' },
+  { title: 'Contacta', to: '/contact' },
 ];
 
 const StyledMenu = styled.nav`

@@ -1,6 +1,7 @@
 ---
 slug: macarena
 name: Macarena
+email: maca[a]laperifericacc.com
 tasks:
   - Gesión Cultural
   - Eventos

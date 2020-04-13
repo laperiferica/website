@@ -1,6 +1,7 @@
 ---
 slug: irene-miranda
 name: Irene Miranda
+email: irene[a]laperifericacc.com
 tasks:
   - Gesión Cultural
   - Eventos
