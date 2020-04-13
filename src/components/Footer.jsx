@@ -29,9 +29,7 @@ const Footer = ({ title }) => (
         {meta.email}
       </a>
     </p>
-    <p>
-      <Social size={2} color={'white'} />
-    </p>
+    <Social size={2} color={'white'} />
     <p>
       {title} · Cultura contemporánea {new Date().getFullYear()}
     </p>
