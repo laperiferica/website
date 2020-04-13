@@ -7,8 +7,9 @@ import Item from './Item';
 const StyledProjects = styled.section`
   margin: 1rem 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(410px, 410px));
+  grid-gap: 1rem;
+  justify-content: center;
   justify-items: center;
 `;
 
@@ -28,7 +29,7 @@ const Projects = () => {
               title
               image {
                 childImageSharp {
-                  fixed(quality: 95, width: 320, height: 200) {
+                  fixed(quality: 95, width: 410, height: 300) {
                     ...GatsbyImageSharpFixed_withWebp
                   }
                 }
