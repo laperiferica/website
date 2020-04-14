@@ -35,6 +35,20 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'featured',
+        path: `${__dirname}/data/featured/current/`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'programs',
+        path: `${__dirname}/data/programs/`,
+      },
+    },
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: ['gatsby-remark-embedder'],

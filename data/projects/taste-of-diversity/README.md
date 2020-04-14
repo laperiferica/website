@@ -2,6 +2,8 @@
 slug: taste-of-diversity
 title: '"Taste of diversity"'
 image: featured.jpg
+tags:
+  - Erasmus+
 ---
 
 "Taste of diversity: art, enviroment & gastronomy", es una iniciativa organizada

@@ -1,9 +1,5 @@
 @import 'variables';
 
-:root {
-  --mainColor: #ff9800;
-}
-
 *,
 *:before,
 *:after {
@@ -31,12 +27,14 @@ button,
 a {
   transition: all 0.18s ease-out;
   color: var(--primary-color);
+  text-decoration: none;
   &:focus {
     outline: none;
   }
   &:hover,
   &:active {
     outline: 0;
+    text-decoration: underline;
   }
 }
 
@@ -102,4 +100,12 @@ blockquote {
 
 iframe {
   max-width: 572px;
+}
+
+input {
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--primary-color);
+  &:focus {
+    outline: none;
+  }
 }

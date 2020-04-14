@@ -2,8 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+import menu from '../../../data/static/menu';
+
 const StyledBurger = styled.button`
-  @media (max-width: 734px) {
+  @media (max-width: ${menu.breakpoint}px) {
     & {
       display: flex;
     }

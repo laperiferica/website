@@ -1,19 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import Item from './Item';
+import Grid from '../Grid';
 
-const StyledProjects = styled.section`
-  margin: 1rem 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(410px, 410px));
-  grid-gap: 1rem;
-  justify-content: center;
-  justify-items: center;
-`;
-
-const Projects = () => {
+const LatestProjects = () => {
   const {
     allMarkdownRemark: { edges },
   } = useStaticQuery(graphql`
@@ -21,6 +11,7 @@ const Projects = () => {
       allMarkdownRemark(
         filter: { fileInfo: { sourceInstanceName: { eq: "projects" } } }
         sort: { fields: frontmatter___title, order: ASC }
+        limit: 6
       ) {
         edges {
           node {
@@ -35,23 +26,20 @@ const Projects = () => {
                 }
               }
             }
-            excerpt
           }
         }
       }
     }
   `);
   return (
-    <StyledProjects>
-      {edges
-        .map((x) => x.node)
-        .map((x, idx) => (
-          <div key={idx}>
-            <Item {...x.frontmatter} content={x.excerpt} />
-          </div>
-        ))}
-    </StyledProjects>
+    <Grid
+      items={edges.map((x) => ({
+        uri: `/projects/${x.node.frontmatter.slug}`,
+        title: x.node.frontmatter.title,
+        image: x.node.frontmatter.image.childImageSharp.fixed,
+      }))}
+    />
   );
 };
 
-export default Projects;
+export default LatestProjects;
