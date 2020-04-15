@@ -3,11 +3,12 @@ import { Link } from 'gatsby';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-import Who from '../components/home/Who';
-import Team from '../components/index/Team';
 import Section from '../components/Section';
+
 import Featured from '../components/home/Featured';
-import LatestProjects from '../components/index/LatestProjects';
+import LatestProjects from '../components/home/LatestProjects';
+import Who from '../components/home/Who';
+import Team from '../components/home/Team';
 
 const IndexPage = () => (
   <Layout>

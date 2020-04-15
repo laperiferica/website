@@ -19,7 +19,7 @@ const createTeamPages = async (createPage, edges) => {
       },
     }) => {
       createPage({
-        path: `team/${slug}`,
+        path: `who/team/${slug}`,
         component: teamTemplate,
         context: {
           slug,

@@ -2,9 +2,10 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-import Team from '../components/contact/Team';
 import Section from '../components/Section';
+
 import Who from '../components/home/Who';
+import Team from '../components/contact/Team';
 
 const WhoPage = () => (
   <Layout>
