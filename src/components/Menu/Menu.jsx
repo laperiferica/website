@@ -55,20 +55,24 @@ const StyledMenu = styled.nav`
         margin-top: 1rem;
       }
     }
+
+    transition: box-shadow 0.2s;
+    &.floating {
+      box-shadow: 0 0.3rem 0.2rem rgba(0, 0, 0, 0.1);
+      position: fixed;
+    }
   }
 `;
 
 const fn = () => {
   const el = document.querySelector('.menu');
-  if (el.style.position === 'fixed') {
+  if (el.classList.contains('floating')) {
     if (window.scrollY < 400) {
-      el.style.position = 'unset';
-      el.style.borderBottom = 'none';
+      el.classList.remove('floating');
     }
   } else {
     if (window.scrollY > 400) {
-      el.style.position = 'fixed';
-      el.style.borderBottom = '1px solid lightgrey';
+      el.classList.add('floating');
     }
   }
 };
