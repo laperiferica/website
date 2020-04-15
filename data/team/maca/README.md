@@ -1,6 +1,6 @@
 ---
-slug: macarena
-name: Macarena
+slug: maca
+name: Maca
 email: maca[a]laperifericacc.com
 tasks:
   - Gesión Cultural
