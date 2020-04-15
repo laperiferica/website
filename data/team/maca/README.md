@@ -3,7 +3,7 @@ slug: maca
 name: Maca
 email: maca[a]laperifericacc.com
 tasks:
-  - Gesión Cultural
+  - Gestión Cultural
   - Eventos
 social:
   linkedin: none
