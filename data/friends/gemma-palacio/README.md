@@ -1,6 +1,8 @@
 ---
 name: Gemma Palacio
-url: https://www.facebook.com/gemmapalacioillustrator/
+url: http://gemmapalacio.com/
 image: image.jpg
+lat: 47.516232
+lng: 14.550072
 ---
 

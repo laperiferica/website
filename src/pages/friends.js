@@ -5,10 +5,12 @@ import SEO from '../components/SEO';
 import Section from '../components/Section';
 
 import List from '../components/friends/List';
+import Map from '../components/friends/Map';
 
 const FriendsPage = () => (
   <Layout>
     <SEO title="amigxs" />
+    <Map />
     <Section id={'friends'} title={'Amigxs'}>
       <List />
     </Section>
