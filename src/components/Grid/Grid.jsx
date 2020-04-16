@@ -28,6 +28,7 @@ Grid.propTypes = {
     PropTypes.shape({
       image: PropTypes.object.isRequired,
       title: PropTypes.string.isRequired,
+      date: PropTypes.string,
       uri: PropTypes.string.isRequired,
       text: PropTypes.string,
     })

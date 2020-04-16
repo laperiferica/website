@@ -37,10 +37,16 @@ const StyledItem = styled.div`
       text-decoration: none;
       font-size: 1.4rem;
     }
+
+    small {
+      text-align: right;
+      display: block;
+      color: gray;
+    }
   }
 `;
 
-const Item = ({ uri, image, title }) => (
+const Item = ({ uri, image, title, date }) => (
   <StyledItem>
     <div className={'image'}>
       <Link to={uri}>
@@ -57,6 +63,7 @@ const Item = ({ uri, image, title }) => (
     </div>
     <div className={'title'}>
       <Link to={uri}>{title}</Link>
+      {date && <small>{date}</small>}
     </div>
   </StyledItem>
 );
@@ -65,6 +72,7 @@ Item.propTypes = {
   uri: PropTypes.string,
   image: PropTypes.object,
   title: PropTypes.string,
+  date: PropTypes.string,
 };
 
 export default Item;

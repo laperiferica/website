@@ -29,6 +29,26 @@ const createTeamPages = async (createPage, edges) => {
   );
 };
 
+// Create posts pages
+const createPostPages = async (createPage, edges) => {
+  const tmpl = path.resolve('src/templates/post.js');
+  edges.forEach(
+    ({
+      node: {
+        frontmatter: { slug },
+      },
+    }) => {
+      createPage({
+        path: `posts/${slug}`,
+        component: tmpl,
+        context: {
+          slug,
+        },
+      });
+    }
+  );
+};
+
 // Create projects pages
 const createProjectPages = async (createPage, edges) => {
   const projectTemplate = path.resolve('src/templates/project.js');
@@ -96,6 +116,17 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           }
         }
       }
+      posts: allMarkdownRemark(
+        filter: { fileInfo: { sourceInstanceName: { eq: "posts" } } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              slug
+            }
+          }
+        }
+      }
       team: allMarkdownRemark(
         filter: { fileInfo: { sourceInstanceName: { eq: "team" } } }
       ) {
@@ -116,5 +147,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
   await createTeamPages(createPage, result.data.team.edges);
   await createProjectPages(createPage, result.data.projects.edges);
+  await createPostPages(createPage, result.data.posts.edges);
   await createProgramPages(createPage, result.data.programs.edges);
 };

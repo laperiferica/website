@@ -6,6 +6,7 @@ export default {
       title: 'Erasmus+ y CES',
       to: '/programs/erasmus+-y-cuerpo-europeo-de-solidaridad',
     },
+    { title: 'Noticias', to: '/posts' },
     { title: 'Quienes somos', to: '/who' },
     { title: 'Amigxs', to: '/friends' },
     { title: 'Contacta', to: '/contact' },
