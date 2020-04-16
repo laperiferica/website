@@ -1,6 +1,6 @@
 ---
-name: Las fiestas del mañana
-url: https://www.facebook.com/lasfiestasdelmanana
+name: CIC Bata
+url: http://cicbata.org/
 image: image.jpg
 ---
 
