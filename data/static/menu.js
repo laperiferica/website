@@ -7,7 +7,7 @@ export default {
       to: '/programs/erasmus+-y-cuerpo-europeo-de-solidaridad',
     },
     { title: 'Quienes somos', to: '/who' },
-    { title: 'Colaboradores', to: '/collaborators' },
+    { title: 'Amigxs', to: '/friends' },
     { title: 'Contacta', to: '/contact' },
   ],
   breakpoint: 1150,

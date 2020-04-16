@@ -51,8 +51,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'collaborators',
-        path: `${__dirname}/data/collaborators/`,
+        name: 'friends',
+        path: `${__dirname}/data/friends/`,
       },
     },
     {

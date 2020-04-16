@@ -9,7 +9,7 @@ const List = () => {
   } = useStaticQuery(graphql`
     {
       allMarkdownRemark(
-        filter: { fileInfo: { sourceInstanceName: { eq: "collaborators" } } }
+        filter: { fileInfo: { sourceInstanceName: { eq: "friends" } } }
         sort: { fields: frontmatter___name, order: ASC }
       ) {
         edges {

@@ -29,7 +29,7 @@ const createTeamPages = async (createPage, edges) => {
   );
 };
 
-// Create project pages
+// Create projects pages
 const createProjectPages = async (createPage, edges) => {
   const projectTemplate = path.resolve('src/templates/project.js');
   edges.forEach(
@@ -49,7 +49,7 @@ const createProjectPages = async (createPage, edges) => {
   );
 };
 
-// Create project pages
+// Create programs pages
 const createProgramPages = async (createPage, edges) => {
   const tmpl = path.resolve('src/templates/program.js');
   edges.forEach(
