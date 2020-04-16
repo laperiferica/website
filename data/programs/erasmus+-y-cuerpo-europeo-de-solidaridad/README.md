@@ -1,6 +1,6 @@
 ---
-title: Erasmus +
-slug: erasmus+
+title: Erasmus + y Cuerpo Europeo de Solidaridad
+slug: erasmus+-y-cuerpo-europeo-de-solidaridad
 image: image.jpg
 ---
 

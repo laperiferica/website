@@ -8,31 +8,10 @@ import Section from '../components/Section';
 
 const LatestProjects = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const { projects, programs } = useStaticQuery(graphql`
+  const { projects } = useStaticQuery(graphql`
     {
       projects: allMarkdownRemark(
         filter: { fileInfo: { sourceInstanceName: { eq: "projects" } } }
-        sort: { fields: frontmatter___title, order: ASC }
-        limit: 6
-      ) {
-        edges {
-          node {
-            frontmatter {
-              slug
-              title
-              image {
-                childImageSharp {
-                  fixed(quality: 95, width: 410, height: 300) {
-                    ...GatsbyImageSharpFixed_withWebp
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      programs: allMarkdownRemark(
-        filter: { fileInfo: { sourceInstanceName: { eq: "programs" } } }
         sort: { fields: frontmatter___title, order: ASC }
         limit: 6
       ) {
@@ -77,18 +56,8 @@ const LatestProjects = () => {
           }))}
         />
       </Section>
-      <Section id={'programs'} title={'Programas Involucrados'}>
-        <Grid
-          items={programs.edges.map((x) => ({
-            uri: `/programs/${x.node.frontmatter.slug}`,
-            title: x.node.frontmatter.title,
-            image: x.node.frontmatter.image.childImageSharp.fixed,
-          }))}
-        />
-      </Section>
     </Layout>
   );
 };
 
 export default LatestProjects;
-
