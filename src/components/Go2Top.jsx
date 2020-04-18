@@ -16,7 +16,7 @@ const StyledGo2Top = styled.a`
   height: 60px;
   text-align: center;
   font-size: 16px;
-  z-index: 15;
+  z-index: 1100;
   text-decoration: none;
   border-radius: 50%;
 

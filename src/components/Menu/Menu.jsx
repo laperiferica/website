@@ -13,7 +13,7 @@ const StyledMenu = styled.nav`
     padding: 1rem;
     width: 100%;
     top: 0;
-    z-index: 1000;
+    z-index: 1100;
     background: white;
     text-transform: uppercase;
     font-size: 1.3rem;
