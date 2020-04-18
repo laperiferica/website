@@ -16,15 +16,12 @@ const IndexPage = () => (
     <Section id={'featured'} title={'Destacamos...'}>
       <Featured />
     </Section>
-    <Section id={'latest-projects'} title={'Últimos Proyectos'}>
-      <LatestProjects />
-    </Section>
-    <Section id={'quienes-somos'} title={'Quienes somos'}>
+    <Section id={'quienes-somos'} title={'La Periférica Cultura Contemporánea'}>
       <Who />
       <Link to={'/who'}>Conócenos mejor...</Link>
     </Section>
-    <Section id={'equipo'} title={'Equipo'}>
-      <Team />
+    <Section id={'latest-projects'} title={'Últimos Proyectos'}>
+      <LatestProjects />
     </Section>
   </Layout>
 );
