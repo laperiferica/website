@@ -10,10 +10,10 @@ import Map from '../components/friends/Map';
 const FriendsPage = () => (
   <Layout>
     <SEO title="amigxs" />
-    <Map />
     <Section id={'friends'} title={'Amigxs'}>
       <List />
     </Section>
+    <Map />
   </Layout>
 );
 
