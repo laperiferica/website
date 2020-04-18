@@ -16,10 +16,14 @@ const StyledMap = styled.div`
 
 const Map = ({ items }) => {
   const ref = useRef();
-  const group = new L.featureGroup(items.map((x) => L.marker([x.lat, x.lng])));
-  useEffect(() => {
-    ref.current.leafletElement.fitBounds(group.getBounds().pad(0.5));
-  }, []);
+  if (typeof window !== 'undefined') {
+    const group = new L.featureGroup(
+      items.map((x) => L.marker([x.lat, x.lng]))
+    );
+    useEffect(() => {
+      ref.current.leafletElement.fitBounds(group.getBounds().pad(0.5));
+    }, []);
+  }
   return (
     typeof window !== 'undefined' && (
       <StyledMap>
