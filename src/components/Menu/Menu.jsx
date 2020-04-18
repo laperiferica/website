@@ -39,6 +39,7 @@ const StyledMenu = styled.nav`
         text-decoration: none;
         transition: background-size color 0.2s;
         color: var(--text-color);
+        &.active,
         &:hover {
           background-position: 0 100%;
           background-size: 3px 40px;
@@ -91,7 +92,12 @@ const Menu = () => {
         <Burger open={open} setOpen={setOpen} />
         <div className={'links'}>
           {menu.items.map((x, idx) => (
-            <Link key={idx} to={x.to} onClick={() => setOpen(false)}>
+            <Link
+              key={idx}
+              to={x.to}
+              activeClassName={'active'}
+              onClick={() => setOpen(false)}
+            >
               {x.title}
             </Link>
           ))}
