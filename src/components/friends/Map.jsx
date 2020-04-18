@@ -21,7 +21,7 @@ const FriendsMap = () => {
               lng
               image {
                 childImageSharp {
-                  fixed(quality: 95, width: 32, height: 32) {
+                  fixed(quality: 95, width: 120, height: 120) {
                     ...GatsbyImageSharpFixed_withWebp
                   }
                 }
