@@ -67,11 +67,11 @@ const StyledMenu = styled.nav`
 const fn = () => {
   const el = document.querySelector('.menu');
   if (el.classList.contains('floating')) {
-    if (window.scrollY < 400) {
+    if (window.scrollY < 470) {
       el.classList.remove('floating');
     }
   } else {
-    if (window.scrollY > 400) {
+    if (window.scrollY > 470) {
       el.classList.add('floating');
     }
   }
