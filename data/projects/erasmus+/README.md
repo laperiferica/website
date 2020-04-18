@@ -2,6 +2,9 @@
 slug: erasmus+
 title: Erasmus +
 image: featured.jpg
+gallery:
+  - title: Cartel
+    image: featured.jpg
 ---
 
 Erasmus es el Programa de educación, formación, juventud y deporte de la

@@ -2,6 +2,9 @@
 slug: las-fiestas-del-mañana
 title: Las fiestas del mañana
 image: featured.jpg
+gallery:
+  - title: Cartel
+    image: featured.jpg
 ---
 
 La Periférica colabora en la organización de este mini-festival en la sala

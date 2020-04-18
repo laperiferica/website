@@ -4,6 +4,8 @@ title: '"Taste of diversity"'
 image: featured.jpg
 tags:
   - Erasmus+
+gallery:
+  - image: featured.jpg
 ---
 
 "Taste of diversity: art, enviroment & gastronomy", es una iniciativa organizada
