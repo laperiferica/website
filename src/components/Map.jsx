@@ -27,7 +27,7 @@ const Map = ({ items }) => {
   return (
     typeof window !== 'undefined' && (
       <StyledMap>
-        <LeafletMap ref={ref} dragging={!L.Browser.mobile}>
+        <LeafletMap ref={ref} scrollWheelZoom={false}>
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
