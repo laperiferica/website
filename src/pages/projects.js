@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Grid from '../components/Grid';
@@ -7,8 +7,9 @@ import SEO from '../components/SEO';
 import Section from '../components/Section';
 
 const LatestProjects = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const { projects } = useStaticQuery(graphql`
+  const {
+    projects: { edges },
+  } = useStaticQuery(graphql`
     {
       projects: allMarkdownRemark(
         filter: { fileInfo: { sourceInstanceName: { eq: "projects" } } }
@@ -34,22 +35,12 @@ const LatestProjects = () => {
     }
   `);
 
-  const filter = (x) =>
-    searchTerm.trim() === '' ||
-    x.node.frontmatter.title.toLowerCase().includes(searchTerm.toLowerCase());
-
   return (
     <Layout>
       <SEO title="Proyectos" />
       <Section id={'projects'} title={'Nuestros Proyectos'}>
-        <input
-          type={'text'}
-          placeholder={'Buscar proyecto...'}
-          value={searchTerm}
-          onChange={(ev) => setSearchTerm(ev.currentTarget.value)}
-        />
         <Grid
-          items={projects.edges.filter(filter).map((x) => ({
+          items={edges.map((x) => ({
             uri: `/projects/${x.node.frontmatter.slug}`,
             title: x.node.frontmatter.title,
             image: x.node.frontmatter.image.childImageSharp.fixed,
