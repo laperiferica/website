@@ -12,6 +12,9 @@ const StyledProjectPage = styled.article`
   text-align: justify;
   max-width: 900px;
   margin: 0 auto;
+  h2 {
+    text-align: center;
+  }
   h4.gallery,
   h4.share {
     margin-top: 3rem;

@@ -5,8 +5,20 @@ import styled from 'styled-components';
 
 import Layout from '../components/Layout';
 import Container from '../components/Container';
+import Share from '../components/Share';
 
-const StyleArticle = styled.article``;
+const StyledProgramPage = styled.article`
+  text-align: justify;
+  max-width: 900px;
+  margin: 0 auto;
+  h2 {
+    text-align: center;
+  }
+  h4.gallery,
+  h4.share {
+    margin-top: 3rem;
+  }
+`;
 
 const ProgramPage = ({
   data: {
@@ -15,10 +27,13 @@ const ProgramPage = ({
 }) => (
   <Layout>
     <Container>
-      <StyleArticle>
+      <StyledProgramPage>
         <h2>{frontmatter.title}</h2>
         <div dangerouslySetInnerHTML={{ __html: html }} />
-      </StyleArticle>
+
+        <h4 className={'share'}>Comparte en tus redes...</h4>
+        <Share />
+      </StyledProgramPage>
     </Container>
   </Layout>
 );
