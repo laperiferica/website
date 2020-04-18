@@ -9,7 +9,6 @@ import Go2Top from './Go2Top';
 
 const StyledLayout = styled.div`
   display: grid;
-  grid-gap: 1.5rem;
   grid-template-rows: auto;
 `;
 
