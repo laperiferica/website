@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import GatsbyImage from 'gatsby-image';
-import { Link } from 'gatsby';
+import { Link } from 'gatsby-plugin-intl';
 
 const StyledItem = styled.div`
   position: relative;

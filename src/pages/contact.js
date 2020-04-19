@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { injectIntl } from 'gatsby-plugin-intl';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
@@ -8,9 +10,9 @@ import Team from '../components/contact/Team';
 
 import meta from '../../data/static/meta';
 
-const ContactPage = () => (
+const ContactPage = ({ intl }) => (
   <Layout>
-    <SEO title="Contact" />
+    <SEO title={intl.formatMessage({ id: 'Contact' })} />
     <Section id={'email'} title={'Email'}>
       <a
         href={`mailto:${meta.email}`}
@@ -20,10 +22,19 @@ const ContactPage = () => (
         {meta.email}
       </a>
     </Section>
-    <Section id={'team-contact'} title={'Team Contact'}>
+    <Section
+      id={'team-contact'}
+      title={intl.formatMessage({ id: 'Team Contact' })}
+    >
       <Team />
     </Section>
   </Layout>
 );
 
-export default ContactPage;
+ContactPage.propTypes = {
+  intl: PropTypes.shape({
+    formatMessage: PropTypes.func,
+  }),
+};
+
+export default injectIntl(ContactPage);

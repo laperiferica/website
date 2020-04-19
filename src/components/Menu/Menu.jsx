@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
+import { injectIntl, Link } from 'gatsby-plugin-intl';
 
 import Burger from './Burger';
 
@@ -78,10 +79,11 @@ const fn = () => {
   }
 };
 
-const Menu = () => {
+const Menu = ({ intl }) => {
   const [open, setOpen] = useState(false);
   useEffect(() => {
     window.addEventListener('scroll', fn);
+    fn();
     return () => {
       window.removeEventListener('scroll', fn);
     };
@@ -98,7 +100,7 @@ const Menu = () => {
               activeClassName={'active'}
               onClick={() => setOpen(false)}
             >
-              {x.title}
+              {intl.formatMessage({ id: x.title })}
             </Link>
           ))}
         </div>
@@ -107,4 +109,10 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+Menu.propTypes = {
+  intl: PropTypes.shape({
+    formatMessage: PropTypes.func,
+  }),
+};
+
+export default injectIntl(Menu);

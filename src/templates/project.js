@@ -7,6 +7,7 @@ import Layout from '../components/Layout';
 import Container from '../components/Container';
 import Share from '../components/Share';
 import Gallery from '../components/Gallery';
+import SEO from '../components/SEO';
 
 const StyledProjectPage = styled.article`
   text-align: justify;
@@ -27,6 +28,7 @@ const ProjectPage = ({
   },
 }) => (
   <Layout>
+    <SEO title={frontmatter.title} />
     <Container>
       <StyledProjectPage>
         <h2>{frontmatter.title}</h2>

@@ -42,6 +42,7 @@ const fn = () => {
 const Go2Top = () => {
   useEffect(() => {
     window.addEventListener('scroll', fn);
+    fn();
     return () => {
       window.removeEventListener('scroll', fn);
     };

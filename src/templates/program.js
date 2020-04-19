@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import Layout from '../components/Layout';
 import Container from '../components/Container';
 import Share from '../components/Share';
+import SEO from '../components/SEO';
 
 const StyledProgramPage = styled.article`
   text-align: justify;
@@ -26,6 +27,7 @@ const ProgramPage = ({
   },
 }) => (
   <Layout>
+    <SEO title={frontmatter.title} />
     <Container>
       <StyledProgramPage>
         <h2>{frontmatter.title}</h2>

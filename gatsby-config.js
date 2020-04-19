@@ -81,6 +81,15 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
+      resolve: 'gatsby-plugin-intl',
+      options: {
+        path: `${__dirname}/data/i18n`,
+        languages: ['en', 'es'],
+        defaultLanguage: 'es',
+        redirect: true,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'La Periférica',

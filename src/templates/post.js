@@ -6,6 +6,7 @@ import GatsbyImage from 'gatsby-image';
 
 import Layout from '../components/Layout';
 import Container from '../components/Container';
+import SEO from '../components/SEO';
 
 const StyleArticle = styled.article``;
 
@@ -15,6 +16,7 @@ const PostPage = ({
   },
 }) => (
   <Layout>
+    <SEO title={frontmatter.title} />
     <Container>
       <StyleArticle>
         <GatsbyImage

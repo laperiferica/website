@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Langs from './Langs';
 
 const StyledFooter = styled.footer`
   margin: 0;
@@ -18,6 +19,7 @@ const StyledFooter = styled.footer`
 const Footer = ({ title }) => (
   <StyledFooter>
     {title} · Cultura contemporánea {new Date().getFullYear()}
+    <Langs />
   </StyledFooter>
 );
 
