@@ -7,6 +7,7 @@ import Layout from '../components/Layout';
 import Container from '../components/Container';
 import Share from '../components/Share';
 import SEO from '../components/SEO';
+import Grid from '../components/Grid';
 
 const StyledProgramPage = styled.article`
   text-align: justify;
@@ -18,6 +19,9 @@ const StyledProgramPage = styled.article`
   h4.gallery,
   h4.share {
     margin-top: 3rem;
+  }
+  .projects {
+    margin-top: 2rem;
   }
 `;
 
@@ -35,6 +39,19 @@ const ProgramPage = ({
 
         <h4 className={'share'}>Comparte en tus redes...</h4>
         <Share />
+
+        {(frontmatter.projects && frontmatter.projects.length) > 0 && (
+          <div className={'projects'}>
+            <h2>Related Projects</h2>
+            <Grid
+              items={frontmatter.projects.map((x) => ({
+                uri: `/projects/${x.frontmatter.slug}`,
+                title: x.frontmatter.title,
+                image: x.frontmatter.image.childImageSharp.fixed,
+              }))}
+            />
+          </div>
+        )}
       </StyledProgramPage>
     </Container>
   </Layout>
@@ -45,6 +62,15 @@ ProgramPage.propTypes = {
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.shape({
         title: PropTypes.string,
+        projects: PropTypes.arrayOf(
+          PropTypes.shape({
+            frontmatter: PropTypes.shape({
+              slug: PropTypes.string,
+              title: PropTypes.string,
+              image: PropTypes.object,
+            }),
+          })
+        ),
       }),
       html: PropTypes.string,
     }),
@@ -61,6 +87,19 @@ export const pageQuery = graphql`
     ) {
       frontmatter {
         title
+        projects {
+          frontmatter {
+            slug
+            title
+            image {
+              childImageSharp {
+                fixed(quality: 95, width: 410, height: 300) {
+                  ...GatsbyImageSharpFixed_withWebp
+                }
+              }
+            }
+          }
+        }
       }
       html
     }

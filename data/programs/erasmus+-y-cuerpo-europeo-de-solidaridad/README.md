@@ -1,7 +1,9 @@
 ---
-title: Erasmus + y Cuerpo Europeo de Solidaridad
 slug: erasmus+-y-cuerpo-europeo-de-solidaridad
+title: Erasmus + y Cuerpo Europeo de Solidaridad
 image: image.jpg
+projects:
+  - taste-of-diversity
 ---
 
 **Erasmus +** es el Programa de educación, formación, juventud y deporte de la

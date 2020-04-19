@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
+import { Link } from 'gatsby-plugin-intl';
 
 import Layout from '../components/Layout';
 import Container from '../components/Container';
@@ -20,6 +21,9 @@ const StyledProjectPage = styled.article`
   h4.share {
     margin-top: 3rem;
   }
+  .programs {
+    text-align: center;
+  }
 `;
 
 const ProjectPage = ({
@@ -32,6 +36,17 @@ const ProjectPage = ({
     <Container>
       <StyledProjectPage>
         <h2>{frontmatter.title}</h2>
+        {frontmatter.programs && frontmatter.programs.length > 0 && (
+          <div className={'programs'}>
+            Dentro del programa:{' '}
+            {frontmatter.programs.map((x, idx) => (
+              <Link key={idx} to={`/programs/${x.frontmatter.slug}`}>
+                {x.frontmatter.title}
+              </Link>
+            ))}
+          </div>
+        )}
+
         <div dangerouslySetInnerHTML={{ __html: html }} />
 
         {frontmatter.gallery && (
@@ -58,6 +73,12 @@ ProjectPage.propTypes = {
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.shape({
         title: PropTypes.string,
+        programs: PropTypes.arrayOf(
+          PropTypes.shape({
+            slug: PropTypes.string,
+            title: PropTypes.srtring,
+          })
+        ),
         gallery: PropTypes.arrayOf(
           PropTypes.shape({
             title: PropTypes.string,
@@ -81,6 +102,12 @@ export const pageQuery = graphql`
       frontmatter {
         slug
         title
+        programs {
+          frontmatter {
+            slug
+            title
+          }
+        }
         gallery {
           title
           image {

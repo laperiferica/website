@@ -2,8 +2,10 @@
 slug: taste-of-diversity
 title: '"Taste of diversity"'
 image: featured.jpg
+programs:
+  - erasmus+-y-cuerpo-europeo-de-solidaridad
 tags:
-  - Erasmus+
+  - IES Almeraya
 gallery:
   - image: featured.jpg
 ---

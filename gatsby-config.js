@@ -6,6 +6,10 @@ module.exports = {
     author: '@jlopezcur',
     // siteUrl: 'https://laperiferica.github.io/website'
   },
+  mapping: {
+    'MarkdownRemark.frontmatter.programs': 'MarkdownRemark.frontmatter.slug',
+    'MarkdownRemark.frontmatter.projects': 'MarkdownRemark.frontmatter.slug',
+  },
   plugins: [
     '@rhysforyou/gatsby-plugin-react-helmet-async',
     'gatsby-plugin-sass',
