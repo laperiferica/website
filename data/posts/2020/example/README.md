@@ -3,6 +3,12 @@ slug: example
 title: Example
 date: 2020-04-17
 image: image.jpg
+tags:
+  - tag1
+  - tag2
+gallery:
+  - title: Example Image
+    image: image.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum molestie

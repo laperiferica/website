@@ -28,7 +28,7 @@ Grid.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.object.isRequired,
-      title: PropTypes.string.isRequired,
+      title: PropTypes.string,
     })
   ),
 };

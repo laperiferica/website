@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
-import { Link } from 'gatsby-plugin-intl';
+import { injectIntl, Link } from 'gatsby-plugin-intl';
 
 import Layout from '../components/Layout';
 import Container from '../components/Container';
@@ -27,6 +27,7 @@ const StyledProjectPage = styled.article`
 `;
 
 const ProjectPage = ({
+  intl,
   data: {
     markdownRemark: { frontmatter, html },
   },
@@ -38,7 +39,7 @@ const ProjectPage = ({
         <h2>{frontmatter.title}</h2>
         {frontmatter.programs && frontmatter.programs.length > 0 && (
           <div className={'programs'}>
-            Dentro del programa:{' '}
+            {intl.formatMessage({ id: 'Inside of the program:' })}{' '}
             {frontmatter.programs.map((x, idx) => (
               <Link key={idx} to={`/programs/${x.frontmatter.slug}`}>
                 {x.frontmatter.title}
@@ -51,7 +52,9 @@ const ProjectPage = ({
 
         {frontmatter.gallery && (
           <>
-            <h4 className={'gallery'}>Galería de medios...</h4>
+            <h4 className={'gallery'}>
+              {intl.formatMessage({ id: 'Media Gallery...' })}
+            </h4>
             <Gallery
               items={frontmatter.gallery.map((x) => ({
                 title: x.title,
@@ -61,7 +64,9 @@ const ProjectPage = ({
           </>
         )}
 
-        <h4 className={'share'}>Comparte en tus redes...</h4>
+        <h4 className={'share'}>
+          {intl.formatMessage({ id: 'Share on your social networks...' })}
+        </h4>
         <Share />
       </StyledProjectPage>
     </Container>
@@ -69,6 +74,9 @@ const ProjectPage = ({
 );
 
 ProjectPage.propTypes = {
+  intl: PropTypes.shape({
+    formatMessage: PropTypes.func,
+  }),
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.shape({
@@ -91,7 +99,7 @@ ProjectPage.propTypes = {
   }),
 };
 
-export default ProjectPage;
+export default injectIntl(ProjectPage);
 
 export const pageQuery = graphql`
   query($slug: String) {

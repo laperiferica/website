@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
+import { injectIntl } from 'gatsby-plugin-intl';
 
 import Layout from '../components/Layout';
 import Container from '../components/Container';
@@ -26,6 +27,7 @@ const StyledProgramPage = styled.article`
 `;
 
 const ProgramPage = ({
+  intl,
   data: {
     markdownRemark: { frontmatter, html },
   },
@@ -37,12 +39,14 @@ const ProgramPage = ({
         <h2>{frontmatter.title}</h2>
         <div dangerouslySetInnerHTML={{ __html: html }} />
 
-        <h4 className={'share'}>Comparte en tus redes...</h4>
+        <h4 className={'share'}>
+          {intl.formatMessage({ id: 'Share on your social networks...' })}
+        </h4>
         <Share />
 
         {(frontmatter.projects && frontmatter.projects.length) > 0 && (
           <div className={'projects'}>
-            <h2>Related Projects</h2>
+            <h2>{intl.formatMessage({ id: 'Related Projects' })}</h2>
             <Grid
               items={frontmatter.projects.map((x) => ({
                 uri: `/projects/${x.frontmatter.slug}`,
@@ -58,6 +62,9 @@ const ProgramPage = ({
 );
 
 ProgramPage.propTypes = {
+  intl: PropTypes.shape({
+    formatMessage: PropTypes.func,
+  }),
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.shape({
@@ -77,7 +84,7 @@ ProgramPage.propTypes = {
   }),
 };
 
-export default ProgramPage;
+export default injectIntl(ProgramPage);
 
 export const pageQuery = graphql`
   query($slug: String) {
