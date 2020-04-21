@@ -42,8 +42,8 @@ const StyledItem = styled.div`
   }
 `;
 
-const Item = ({ image, title, even }) => (
-  <StyledItem even={even}>
+const Item = ({ thumbnail, title, even, onClick }) => (
+  <StyledItem even={even} onClick={onClick}>
     <div className={'image'}>
       <GatsbyImage
         objectFit={'cover'}
@@ -51,7 +51,7 @@ const Item = ({ image, title, even }) => (
         width={'100%'}
         height={'100%'}
         maxHeight={'25rem'}
-        fixed={image}
+        fixed={thumbnail}
         alt={title}
       />
     </div>
@@ -60,9 +60,10 @@ const Item = ({ image, title, even }) => (
 );
 
 Item.propTypes = {
-  image: PropTypes.object,
+  thumbnail: PropTypes.object,
   title: PropTypes.string,
   even: PropTypes.bool,
+  onClick: PropTypes.func,
 };
 
 export default Item;
