@@ -17,6 +17,7 @@ const StyledItem = styled.div`
   -webkit-backface-visibility: hidden;
   padding: 0.7rem 0.7rem 0;
   text-align: left;
+  cursor: pointer;
   .gatsby-image-wrapper {
     display: block !important;
   }
