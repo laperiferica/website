@@ -25,11 +25,8 @@ const StyledGo2Top = styled.a`
     color: white;
   }
 
-  &:hover,
-  &:active {
-    &::after {
-      display: none;
-    }
+  &::after {
+    display: none;
   }
 `;
 

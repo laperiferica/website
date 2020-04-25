@@ -32,7 +32,9 @@ const StyleShare = styled.div`
     margin-right: 1rem;
     &:hover {
       color: black !important;
-      border-bottom: 1px solid var(--primary-color) !important;
+    }
+    &::after {
+      display: none;
     }
   }
 `;

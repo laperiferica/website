@@ -14,6 +14,9 @@ const StyledSocial = styled.ul`
   font-size: ${(props) => props.size}rem;
   a {
     color: ${(props) => props.color};
+    &::after {
+      display: none;
+    }
   }
 `;
 

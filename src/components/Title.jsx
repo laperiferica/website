@@ -11,6 +11,9 @@ const StyledTitle = styled.div`
   justify-content: center;
   align-content: center;
   a {
+    &::after {
+      display: none;
+    }
     text-decoration: none;
     img {
       margin-bottom: 0;

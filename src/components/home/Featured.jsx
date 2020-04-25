@@ -5,11 +5,8 @@ import GatsbyImage from 'gatsby-image';
 
 const StyledFeatured = styled.section`
   > a {
-    &:hover,
-    &:active {
-      &::after {
-        display: none;
-      }
+    &::after {
+      display: none;
     }
   }
 `;
