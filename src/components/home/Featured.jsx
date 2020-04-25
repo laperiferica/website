@@ -22,7 +22,7 @@ const Featured = () => {
           url
           image {
             childImageSharp {
-              fixed(quality: 100, height: 500) {
+              fixed(quality: 100, height: 310) {
                 ...GatsbyImageSharpFixed_withWebp
               }
               fluid(quality: 100) {
