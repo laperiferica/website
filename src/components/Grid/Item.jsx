@@ -26,16 +26,17 @@ const StyledItem = styled.div`
   }
   .title {
     position: absolute;
-    bottom: -1rem;
-    right: 0.5rem;
-    background: rgba(255, 255, 255, 1);
-    padding: 0.7rem 1rem 1.5rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0.7rem;
     box-shadow: 0 -0.2rem 0.2rem rgba(0, 0, 0, 0.2);
     a {
       text-transform: uppercase;
-      color: var(--primary-color);
+      color: white;
       text-decoration: none;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
 
     small {
@@ -50,15 +51,7 @@ const Item = ({ uri, image, title, date }) => (
   <StyledItem>
     <div className={'image'}>
       <Link to={uri}>
-        <GatsbyImage
-          objectFit={'cover'}
-          objectPosition={'100% 0'}
-          width={'100%'}
-          height={'100%'}
-          maxHeight={'25rem'}
-          fixed={image}
-          alt={title}
-        />
+        <GatsbyImage fixed={image} alt={title} />
       </Link>
     </div>
     <div className={'title'}>
