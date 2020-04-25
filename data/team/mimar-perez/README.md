@@ -1,7 +1,7 @@
 ---
 slug: mimar-perez
 name: Mimar Pérez
-email: maca[a]laperifericacc.com
+email: mimar[a]laperifericacc.com
 tasks:
   - Diseño Gráfico
   - Online Marketing
