@@ -63,7 +63,7 @@ const PostPage = ({
         <Tags items={frontmatter.tags} />
 
         <h4 className={'share'}>
-          {intl.formatMessage({ id: 'Share on your social networks...' })}
+          {intl.formatMessage({ id: 'Share on your social networks' })}
         </h4>
         <Share />
       </StyledPostPage>

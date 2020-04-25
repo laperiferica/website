@@ -43,7 +43,7 @@ const ProgramPage = ({
         <div dangerouslySetInnerHTML={{ __html: html }} />
 
         <h4 className={'share'}>
-          {intl.formatMessage({ id: 'Share on your social networks...' })}
+          {intl.formatMessage({ id: 'Share on your social networks' })}
         </h4>
         <Share />
 
