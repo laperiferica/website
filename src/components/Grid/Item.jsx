@@ -22,6 +22,12 @@ const StyledItem = styled.div`
       &:hover {
         transform: scale(1.2) rotate(5deg);
       }
+      &:hover,
+      &:active {
+        &::after {
+          display: none;
+        }
+      }
     }
   }
   .title {

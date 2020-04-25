@@ -3,7 +3,16 @@ import styled from 'styled-components';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import GatsbyImage from 'gatsby-image';
 
-const StyledFeatured = styled.section``;
+const StyledFeatured = styled.section`
+  > a {
+    &:hover,
+    &:active {
+      &::after {
+        display: none;
+      }
+    }
+  }
+`;
 
 const Featured = () => {
   const {

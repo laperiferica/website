@@ -6,6 +6,14 @@ import GatsbyImage from 'gatsby-image';
 import BiLink from '../BiLink';
 
 const StyledItem = styled.li`
+  > a {
+    &:hover,
+    &:active {
+      &::after {
+        display: none;
+      }
+    }
+  }
   .gatsby-image-wrapper {
     border-radius: 50%;
   }

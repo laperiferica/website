@@ -25,19 +25,10 @@ const StyledMenu = styled.nav`
       align-items: center;
       word-wrap: wrap;
       a {
-        background-position: 0 100%;
-        background-repeat: repeat-x;
-        background-size: 3px 3px;
         display: inline-block;
         padding: 0.5rem 0.5rem;
         margin: 0 0.5rem;
         text-decoration: none;
-        transition: background-size color 0.2s;
-        color: var(--text-color);
-        &.active,
-        &:hover {
-          text-decoration: var(--primary-color) solid line-through;
-        }
       }
     }
     @media (max-width: ${menu.breakpoint}px) {

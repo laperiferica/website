@@ -24,6 +24,13 @@ const StyledGo2Top = styled.a`
     background-color: rgba(0, 0, 0, 1);
     color: white;
   }
+
+  &:hover,
+  &:active {
+    &::after {
+      display: none;
+    }
+  }
 `;
 
 const fn = () => {
