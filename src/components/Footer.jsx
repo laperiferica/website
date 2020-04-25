@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Langs from './Langs';
 
 const StyledFooter = styled.footer`
-  margin: 0;
+  margin: auto 0 0 0;
   padding: 1.5rem 0;
   background: black;
   color: white;

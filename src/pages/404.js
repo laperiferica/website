@@ -8,7 +8,7 @@ import SEO from '../components/SEO';
 import Section from '../components/Section';
 
 const StyledNotFoundPage = styled.div`
-  margin: 4rem 0 10rem;
+  margin: 4rem 0 4rem;
 `;
 
 const NotFoundPage = ({ intl }) => (

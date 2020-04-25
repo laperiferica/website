@@ -8,8 +8,9 @@ import Footer from './Footer';
 import Go2Top from './Go2Top';
 
 const StyledLayout = styled.div`
-  display: grid;
-  grid-template-rows: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 `;
 
 const Layout = ({ children }) => {
