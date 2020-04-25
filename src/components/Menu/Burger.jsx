@@ -25,6 +25,10 @@ const StyledBurger = styled.button`
     outline: none;
   }
 
+  &::after {
+    display: none;
+  }
+
   div {
     width: 2rem;
     height: 0.25rem;

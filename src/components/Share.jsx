@@ -23,11 +23,15 @@ import {
 import { Location } from '@reach/router';
 
 const StyleShare = styled.div`
+  @media (max-width: 600px) {
+    & {
+      text-align: center;
+    }
+  }
   padding-bottom: 1rem;
   margin: 1rem 0 1rem;
   color: var(--primary-color);
-  height: 1.5rem;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   button {
     margin-right: 1rem;
     &:hover {
