@@ -12,9 +12,10 @@ import Grid from '../components/Grid';
 
 const StyledProgramPage = styled.article`
   text-align: justify;
+  word-break: break-word;
   max-width: 900px;
   margin: 0 auto;
-  h2 {
+  .center {
     text-align: center;
   }
   h4.gallery,
@@ -36,7 +37,9 @@ const ProgramPage = ({
     <SEO title={frontmatter.title} />
     <Container>
       <StyledProgramPage>
-        <h2>{frontmatter.title}</h2>
+        <div className={'center'}>
+          <h2>{frontmatter.title}</h2>
+        </div>
         <div dangerouslySetInnerHTML={{ __html: html }} />
 
         <h4 className={'share'}>
@@ -48,6 +51,7 @@ const ProgramPage = ({
           <div className={'projects'}>
             <h2>{intl.formatMessage({ id: 'Related Projects' })}</h2>
             <Grid
+              align={'left'}
               items={frontmatter.projects.map((x) => ({
                 uri: `/projects/${x.frontmatter.slug}`,
                 title: x.frontmatter.title,
@@ -100,7 +104,7 @@ export const pageQuery = graphql`
             title
             image {
               childImageSharp {
-                fixed(quality: 95, width: 410, height: 300) {
+                fixed(quality: 95, width: 300, height: 250) {
                   ...GatsbyImageSharpFixed_withWebp
                 }
               }

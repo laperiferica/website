@@ -25,12 +25,6 @@ const StyledMenu = styled.nav`
       align-items: center;
       word-wrap: wrap;
       a {
-        // https://css-tricks.com/having-fun-with-link-hover-effects/
-        background: linear-gradient(
-          to bottom,
-          var(--primary-color) 0%,
-          var(--primary-color) 100%
-        );
         background-position: 0 100%;
         background-repeat: repeat-x;
         background-size: 3px 3px;
@@ -42,11 +36,7 @@ const StyledMenu = styled.nav`
         color: var(--text-color);
         &.active,
         &:hover {
-          background-position: 0 100%;
-          background-size: 3px 40px;
-          background-repeat: repeat-x;
-          text-decoration: none;
-          color: white;
+          text-decoration: var(--primary-color) solid line-through;
         }
       }
     }

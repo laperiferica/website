@@ -9,6 +9,9 @@ const StyledItem = styled.li`
   .gatsby-image-wrapper {
     border-radius: 50%;
   }
+  .center {
+    text-align: center;
+  }
   > ul {
     margin: 0;
     padding: 0;
@@ -27,7 +30,9 @@ const Item = ({ uri, image, name, tasks, email }) => (
       <GatsbyImage fixed={image} alt={`Foto de ${name}`} />
     </BiLink>
     <BiLink url={uri}>
-      <h3>{name}</h3>
+      <div className={'center'}>
+        <h3>{name}</h3>
+      </div>
     </BiLink>
     {tasks && (
       <ul>

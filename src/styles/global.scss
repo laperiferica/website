@@ -26,7 +26,9 @@ body {
 button,
 a {
   transition: all 0.18s ease-out;
-  color: var(--primary-color);
+  font-weight: bold;
+  // color: var(--primary-color);
+  color: black;
   text-decoration: none;
   &:focus {
     outline: none;
@@ -34,7 +36,7 @@ a {
   &:hover,
   &:active {
     outline: 0;
-    text-decoration: underline;
+    text-decoration: #ff00ff solid line-through;
   }
 }
 
@@ -50,13 +52,16 @@ h3,
 h4,
 h5,
 h6 {
+  display: inline-block;
+  padding: 0.5rem 0.6rem 0.1rem;
   margin: 0 0 1rem 0;
   font-weight: normal;
   font-style: normal;
-  padding: 0;
+  // padding: 0;
   line-height: 1.1;
   text-transform: uppercase;
-  color: var(--primary-color);
+  // color: var(--primary-color);
+  background-image: linear-gradient(to right, yellow 0, yellow 100%);
 }
 h1 {
   font-size: 2.25rem;

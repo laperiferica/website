@@ -25,7 +25,7 @@ const ProjectsPage = ({ intl }) => {
               title
               image {
                 childImageSharp {
-                  fixed(quality: 95, width: 410, height: 300) {
+                  fixed(quality: 95, width: 300, height: 250) {
                     ...GatsbyImageSharpFixed_withWebp
                   }
                 }

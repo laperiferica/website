@@ -14,7 +14,7 @@ const StyledProjectPage = styled.article`
   text-align: justify;
   max-width: 900px;
   margin: 0 auto;
-  h2 {
+  .center {
     text-align: center;
   }
   h4.gallery,
@@ -36,7 +36,9 @@ const ProjectPage = ({
     <SEO title={frontmatter.title} />
     <Container>
       <StyledProjectPage>
-        <h2>{frontmatter.title}</h2>
+        <div className={'center'}>
+          <h2>{frontmatter.title}</h2>
+        </div>
         {frontmatter.programs && frontmatter.programs.length > 0 && (
           <div className={'programs'}>
             {intl.formatMessage({ id: 'Inside of the program:' })}{' '}
