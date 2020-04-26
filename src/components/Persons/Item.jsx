@@ -6,17 +6,15 @@ import GatsbyImage from 'gatsby-image';
 import BiLink from '../BiLink';
 
 const StyledItem = styled.li`
-  > a {
-    &::after {
-      display: none;
+  max-width: 250px;
+  text-align: center;
+  a {
+    width: 190px;
+    .gatsby-image-wrapper {
+      border-radius: 50%;
     }
   }
-  .gatsby-image-wrapper {
-    border-radius: 50%;
-  }
-  .center {
-    text-align: center;
-  }
+
   > ul {
     margin: 0;
     padding: 0;
@@ -33,11 +31,7 @@ const Item = ({ uri, image, name, tasks, email }) => (
   <StyledItem>
     <BiLink url={uri}>
       <GatsbyImage fixed={image} alt={`Foto de ${name}`} />
-    </BiLink>
-    <BiLink url={uri}>
-      <div className={'center'}>
-        <h3>{name}</h3>
-      </div>
+      <h3>{name}</h3>
     </BiLink>
     {tasks && (
       <ul>

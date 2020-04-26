@@ -6,16 +6,7 @@ import GatsbyImage from 'gatsby-image';
 const StyledItem = styled.div`
   position: relative;
   transition: transform 0.3s;
-  ${(props) =>
-    props.even
-      ? css`
-          transform: rotate(3deg) scale(0.8);
-        `
-      : css`
-          transform: rotate(-3deg) scale(0.8);
-        `}
   -webkit-backface-visibility: hidden;
-  padding: 0.7rem 0.7rem 0;
   text-align: left;
   cursor: pointer;
   .gatsby-image-wrapper {
@@ -56,7 +47,6 @@ const Item = ({ thumbnail, title, even, onClick }) => (
         alt={title}
       />
     </div>
-    <div className={'title'}>{title}</div>
   </StyledItem>
 );
 
