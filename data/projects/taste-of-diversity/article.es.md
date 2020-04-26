@@ -1,6 +1,7 @@
 ---
 slug: taste-of-diversity
-title: '"Taste of diversity"'
+lang: es
+title: Taste of diversity
 image: featured.jpg
 programs:
   - erasmus+-y-cuerpo-europeo-de-solidaridad
