@@ -7,7 +7,7 @@ import meta from '../../data/static/meta';
 const StyledSocial = styled.ul`
   display: flex;
   max-width: ${(props) => props.width}px;
-  margin: 2rem auto 0;
+  margin: 1.5rem auto 0;
   justify-content: space-between;
   list-style: none;
   padding: 0;

@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import logo from '../images/logo.png';
 
 const StyledTitle = styled.div`
-  height: 400px;
+  height: 350px;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -17,6 +17,7 @@ const StyledTitle = styled.div`
     text-decoration: none;
     img {
       margin-bottom: 0;
+      width: 280px;
     }
   }
 `;

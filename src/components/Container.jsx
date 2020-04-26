@@ -4,9 +4,9 @@ import styled from 'styled-components';
 
 const StyledContainer = styled.div`
   padding: 1.5rem;
-  max-width: 1280px;
+  max-width: 1024px;
   margin: 0 auto;
-  text-align: center;
+  text-align: justify;
 `;
 
 const Container = ({ children, id }) => (

@@ -10,5 +10,5 @@ export default {
     { title: 'Friends', to: '/friends' },
     { title: 'Contact', to: '/contact' },
   ],
-  breakpoint: 1150,
+  breakpoint: 980,
 };
