@@ -6,7 +6,9 @@ import { Link } from 'gatsby-plugin-intl';
 
 const StyledItem = styled.div`
   position: relative;
-  text-align: left;
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+
   .gatsby-image-wrapper {
     display: block !important;
   }
@@ -14,19 +16,11 @@ const StyledItem = styled.div`
   img {
     margin-bottom: 0;
   }
-  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+
   .image {
-    overflow: hidden;
-    a {
-      display: block;
-      &:hover {
-        transform: scale(1.2) rotate(5deg);
-      }
-      &::after {
-        display: none;
-      }
-    }
+    transition: all 0.3s;
   }
+
   .title {
     position: absolute;
     bottom: 0;
@@ -35,12 +29,7 @@ const StyledItem = styled.div`
     background: rgba(0, 0, 0, 0.7);
     padding: 0.7rem;
     box-shadow: 0 -0.2rem 0.2rem rgba(0, 0, 0, 0.2);
-    a {
-      text-transform: uppercase;
-      color: white;
-      text-decoration: none;
-      font-size: 1.2rem;
-    }
+    text-transform: uppercase;
 
     small {
       text-align: right;
@@ -48,19 +37,26 @@ const StyledItem = styled.div`
       color: gray;
     }
   }
+
+  a:hover {
+    color: white;
+    .image {
+      transform: scale(1.2);
+    }
+  }
 `;
 
 const Item = ({ uri, image, title, date }) => (
   <StyledItem>
-    <div className={'image'}>
-      <Link to={uri}>
+    <Link to={uri}>
+      <div className={'image'}>
         <GatsbyImage fixed={image} alt={title} />
-      </Link>
-    </div>
-    <div className={'title'}>
-      <Link to={uri}>{title}</Link>
-      {date && <small>{date}</small>}
-    </div>
+      </div>
+      <div className={'title'}>
+        {title}
+        {date && <small>{date}</small>}
+      </div>
+    </Link>
   </StyledItem>
 );
 
