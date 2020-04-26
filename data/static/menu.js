@@ -3,7 +3,7 @@ export default {
     { title: 'Who we are', to: '/who' },
     { title: 'Projects', to: '/projects' },
     {
-      title: 'Erasmus+ y CES',
+      title: 'Erasmus+/CES',
       to: '/programs/erasmus+-y-cuerpo-europeo-de-solidaridad',
     },
     // { title: 'Noticias', to: '/posts' },
