@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -41,14 +41,14 @@ const StyledMenu = styled.nav`
   }
 `;
 
-const fn = () => {
+const fn = (y) => () => {
   const el = document.querySelector('.menu');
   if (el.classList.contains('floating')) {
-    if (window.scrollY < 470) {
+    if (window.scrollY < y) {
       el.classList.remove('floating');
     }
   } else {
-    if (window.scrollY > 470) {
+    if (window.scrollY > y) {
       el.classList.add('floating');
     }
   }
@@ -56,15 +56,17 @@ const fn = () => {
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
+  const ref = useRef();
   useEffect(() => {
-    window.addEventListener('scroll', fn);
-    fn();
+    const scrollFn = fn(ref.current.offsetTop);
+    window.addEventListener('scroll', scrollFn);
+    scrollFn();
     return () => {
-      window.removeEventListener('scroll', fn);
+      window.removeEventListener('scroll', scrollFn);
     };
   });
   return (
-    <StyledMenu open={open}>
+    <StyledMenu open={open} ref={ref}>
       <div className={'menu'}>
         <Burger open={open} setOpen={setOpen} />
         <div className={'links'}>
