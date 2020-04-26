@@ -5,18 +5,16 @@ image: featured.jpg
 gallery:
   - title: Cartel
     image: featured.jpg
-  - title: Cartel
-    image: featured.jpg
-  - title: Cartel
-    image: featured.jpg
-  - title: Cartel
-    image: featured.jpg
-  - title: Cartel
-    image: featured.jpg
-  - title: Cartel
-    image: featured.jpg
-  - title: Cartel
-    image: featured.jpg
+  - title:
+    image: photo01.jpg
+  - title:
+    image: photo02.jpg
+  - title:
+    image: photo03.jpg
+  - title:
+    image: photo04.jpg
+  - title:
+    image: photo05.jpg
 ---
 
 Durante dos meses, de octubre a noviembre de 2019, la Cámara Gigante del Centro
