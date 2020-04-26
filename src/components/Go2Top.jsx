@@ -9,10 +9,8 @@ const StyledGo2Top = styled.a`
   bottom: 16px;
   right: 16px;
   cursor: pointer;
-  background: var(--primary-color);
-  transition: background-color 0.2s;
+  background-color: var(--text-color);
   padding: 12px 8px 8px 8px;
-  color: white;
   width: 60px;
   height: 60px;
   text-align: center;
@@ -22,12 +20,7 @@ const StyledGo2Top = styled.a`
   border-radius: 50%;
 
   &:hover {
-    background-color: var(--text-color);
     color: white;
-  }
-
-  &::after {
-    display: none;
   }
 `;
 
