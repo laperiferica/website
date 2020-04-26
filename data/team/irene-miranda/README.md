@@ -4,7 +4,7 @@ name: Irene Miranda
 email: irene[a]laperifericacc.com
 tasks:
   - Gestión Cultural
-  - Eventos
+  - Educación
 social:
   linkedin: none
   twitter: none

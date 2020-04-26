@@ -3,7 +3,7 @@ slug: jose-rueda
 name: Jose Rueda
 email: jose[a]laperifericacc.com
 tasks:
-  - Música
+  - Gestión Musical
   - Comunicación
 social:
   linkedin: none

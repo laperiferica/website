@@ -4,7 +4,7 @@ name: Mimar Pérez
 email: mimar[a]laperifericacc.com
 tasks:
   - Diseño Gráfico
-  - Online Marketing
+  - Educación
 social:
   linkedin: none
   twitter: none

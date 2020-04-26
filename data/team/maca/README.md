@@ -4,7 +4,7 @@ name: Maca
 email: maca[a]laperifericacc.com
 tasks:
   - Gestión Cultural
-  - Eventos
+  - Cooperación
 social:
   linkedin: none
   twitter: none

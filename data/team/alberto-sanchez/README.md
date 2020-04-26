@@ -4,7 +4,7 @@ name: Alberto Sánchez
 email: alberto[a]laperifericacc.com
 tasks:
   - Gestión Cultural
-  - Voluntariado
+  - Antropología
 social:
   linkedin: none
   twitter: none
