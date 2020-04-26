@@ -3,13 +3,14 @@ import styled from 'styled-components';
 import { FaChevronUp } from 'react-icons/fa';
 
 const StyledGo2Top = styled.a`
-  line-height: 4rem;
+  line-height: 3rem;
   display: none;
   position: fixed;
   bottom: 16px;
   right: 16px;
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.8);
+  background: var(--primary-color);
+  transition: background-color 0.2s;
   padding: 12px 8px 8px 8px;
   color: white;
   width: 60px;
@@ -21,7 +22,7 @@ const StyledGo2Top = styled.a`
   border-radius: 50%;
 
   &:hover {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: var(--text-color);
     color: white;
   }
 
