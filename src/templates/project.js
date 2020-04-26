@@ -53,18 +53,13 @@ const ProjectPage = ({
         <div dangerouslySetInnerHTML={{ __html: html }} />
 
         {frontmatter.gallery && (
-          <>
-            <h4 className={'gallery'}>
-              {intl.formatMessage({ id: 'Media Gallery...' })}
-            </h4>
-            <Gallery
-              items={frontmatter.gallery.map((x) => ({
-                title: x.title,
-                thumbnail: x.image.thumbnail.fixed,
-                full: x.image.full.fixed,
-              }))}
-            />
-          </>
+          <Gallery
+            items={frontmatter.gallery.map((x) => ({
+              title: x.title,
+              thumbnail: x.image.thumbnail.fixed,
+              full: x.image.full.fixed,
+            }))}
+          />
         )}
 
         <h4 className={'share'}>
@@ -123,7 +118,7 @@ export const pageQuery = graphql`
           title
           image {
             thumbnail: childImageSharp {
-              fixed(quality: 95, width: 250, height: 250, fit: INSIDE) {
+              fixed(quality: 95, width: 250, height: 250) {
                 ...GatsbyImageSharpFixed_withWebp
               }
             }

@@ -46,18 +46,13 @@ const PostPage = ({
         <div dangerouslySetInnerHTML={{ __html: html }} />
 
         {frontmatter.gallery && (
-          <>
-            <h4 className={'gallery'}>
-              {intl.formatMessage({ id: 'Media Gallery...' })}
-            </h4>
-            <Gallery
-              items={frontmatter.gallery.map((x) => ({
-                title: x.title,
-                thumbnail: x.image.thumbnail.fixed,
-                full: x.image.full.fixed,
-              }))}
-            />
-          </>
+          <Gallery
+            items={frontmatter.gallery.map((x) => ({
+              title: x.title,
+              thumbnail: x.image.thumbnail.fixed,
+              full: x.image.full.fixed,
+            }))}
+          />
         )}
 
         <Tags items={frontmatter.tags} />
