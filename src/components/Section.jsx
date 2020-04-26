@@ -3,12 +3,13 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import Anchor from './Anchor';
+import MarkerHeading from './MarkedHeading';
 
 const StyledSection = styled.section`
   padding: 1.5rem;
-  max-width: 1280px;
+  max-width: 1024px;
   margin: 0 auto;
-  text-align: center;
+  text-align: justify;
   h2 {
     margin-bottom: 2rem;
   }
@@ -17,7 +18,9 @@ const StyledSection = styled.section`
 const Section = ({ children, id, title }) => (
   <StyledSection>
     <Anchor id={id} />
-    <h2>{title}</h2>
+    <center>
+      <MarkerHeading>{title}</MarkerHeading>
+    </center>
     {children}
   </StyledSection>
 );
