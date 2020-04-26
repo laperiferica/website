@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { injectIntl, Link } from 'gatsby-plugin-intl';
 
 import Burger from './Burger';
+import Item from './Item';
 
 import menu from '../../../data/static/menu';
 
@@ -24,12 +24,6 @@ const StyledMenu = styled.nav`
       justify-content: center;
       align-items: center;
       word-wrap: wrap;
-      a {
-        display: inline-block;
-        padding: 0.5rem 0.5rem;
-        margin: 0 0.5rem;
-        text-decoration: none;
-      }
     }
     @media (max-width: ${menu.breakpoint}px) {
       .links {
@@ -60,7 +54,7 @@ const fn = () => {
   }
 };
 
-const Menu = ({ intl }) => {
+const Menu = () => {
   const [open, setOpen] = useState(false);
   useEffect(() => {
     window.addEventListener('scroll', fn);
@@ -75,14 +69,12 @@ const Menu = ({ intl }) => {
         <Burger open={open} setOpen={setOpen} />
         <div className={'links'}>
           {menu.items.map((x, idx) => (
-            <Link
+            <Item
               key={idx}
-              to={x.to}
+              {...x}
               activeClassName={'active'}
               onClick={() => setOpen(false)}
-            >
-              {intl.formatMessage({ id: x.title })}
-            </Link>
+            />
           ))}
         </div>
       </div>
@@ -96,4 +88,4 @@ Menu.propTypes = {
   }),
 };
 
-export default injectIntl(Menu);
+export default Menu;
