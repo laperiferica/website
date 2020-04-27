@@ -18,9 +18,11 @@ const StyledSection = styled.section`
 const Section = ({ children, id, title }) => (
   <StyledSection>
     <Anchor id={id} />
-    <center>
-      <MarkerHeading>{title}</MarkerHeading>
-    </center>
+    {title && (
+      <center>
+        <MarkerHeading>{title}</MarkerHeading>
+      </center>
+    )}
     {children}
   </StyledSection>
 );
