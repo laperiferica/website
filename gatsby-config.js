@@ -28,6 +28,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        name: 'pages',
+        path: `${__dirname}/data/pages/`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         name: 'team',
         path: `${__dirname}/data/team/`,
       },
@@ -89,7 +96,7 @@ module.exports = {
       options: {
         path: `${__dirname}/data/i18n`,
         languages: ['en', 'es'],
-        defaultLanguage: 'es',
+        defaultLanguage: 'en',
         redirect: true,
       },
     },
