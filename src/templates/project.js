@@ -40,6 +40,7 @@ const ProjectPage = ({
         <center>
           <MarkerHeading>{frontmatter.title}</MarkerHeading>
         </center>
+
         {frontmatter.programs && frontmatter.programs.length > 0 && (
           <div className={'programs'}>
             {intl.formatMessage({ id: 'Inside of the program:' })}{' '}

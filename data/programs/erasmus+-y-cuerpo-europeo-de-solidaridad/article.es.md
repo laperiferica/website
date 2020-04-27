@@ -1,5 +1,6 @@
 ---
 slug: erasmus+-y-cuerpo-europeo-de-solidaridad
+lang: es
 title: Erasmus + y Cuerpo Europeo de Solidaridad
 image: image.jpg
 projects:
