@@ -6,9 +6,9 @@ import GatsbyImage from 'gatsby-image';
 const StyledItem = styled.div`
   position: relative;
   transition: transform 0.3s;
-  -webkit-backface-visibility: hidden;
   text-align: left;
   cursor: pointer;
+  overflow: hidden;
   .gatsby-image-wrapper {
     display: block !important;
   }
@@ -18,6 +18,7 @@ const StyledItem = styled.div`
   }
   box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
   .image {
+    transition: all 0.3s;
     a {
       display: block;
       &:hover {
@@ -31,6 +32,9 @@ const StyledItem = styled.div`
   }
   &:hover {
     transform: rotate(0deg) scale(1);
+    .image {
+      transform: scale(1.2);
+    }
   }
 `;
 
