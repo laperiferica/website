@@ -27,7 +27,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-react-leaflet',
       options: {
-        linkStyled: false,
+        linkStyled: true,
       },
     },
     {
