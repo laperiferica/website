@@ -9,6 +9,7 @@ import Container from '../components/Container';
 import Share from '../components/Share';
 import Gallery from '../components/Gallery';
 import SEO from '../components/SEO';
+import MarkerHeading from '../components/MarkedHeading';
 
 const StyledProjectPage = styled.article`
   text-align: justify;
@@ -36,9 +37,9 @@ const ProjectPage = ({
     <SEO title={frontmatter.title} />
     <Container>
       <StyledProjectPage>
-        <div className={'center'}>
-          <h2>{frontmatter.title}</h2>
-        </div>
+        <center>
+          <MarkerHeading>{frontmatter.title}</MarkerHeading>
+        </center>
         {frontmatter.programs && frontmatter.programs.length > 0 && (
           <div className={'programs'}>
             {intl.formatMessage({ id: 'Inside of the program:' })}{' '}
@@ -100,9 +101,9 @@ ProjectPage.propTypes = {
 export default injectIntl(ProjectPage);
 
 export const pageQuery = graphql`
-  query($slug: String) {
+  query($slug: String, $language: String) {
     markdownRemark(
-      frontmatter: { slug: { eq: $slug } }
+      frontmatter: { slug: { eq: $slug }, lang: { eq: $language } }
       fileInfo: { sourceInstanceName: { eq: "projects" } }
     ) {
       frontmatter {
