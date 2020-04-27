@@ -24,7 +24,12 @@ module.exports = {
         ],
       },
     },
-    'gatsby-plugin-react-leaflet',
+    {
+      resolve: 'gatsby-plugin-react-leaflet',
+      options: {
+        linkStyled: false,
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
