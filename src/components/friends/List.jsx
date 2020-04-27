@@ -1,9 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import styled from 'styled-components';
 
 import Persons from '../Persons';
 
+const StyledList = styled.div`
+  > ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0 0 3rem;
+    padding: 0;
+    li {
+      // display: inline-block;
+      text-transform: uppercase;
+      a {
+        font-size: 1.4rem;
+        margin: 1rem;
+        cursor: pointer;
+        &.active {
+          border-bottom: 2px solid var(--primary-color);
+        }
+      }
+    }
+  }
+`;
+
+const types = [
+  { type: 'friend', label: 'Friends' },
+  { type: 'liked', label: 'Liked' },
+  { type: 'networks', label: 'Networks' },
+  { type: 'collaborator', label: 'Collaborators' },
+];
+
 const List = () => {
+  const [type, setType] = useState('friend');
   const {
     allMarkdownRemark: { edges },
   } = useStaticQuery(graphql`
@@ -15,6 +46,7 @@ const List = () => {
         edges {
           node {
             frontmatter {
+              type
               name
               url
               image {
@@ -30,14 +62,31 @@ const List = () => {
       }
     }
   `);
+
   return (
-    <Persons
-      items={edges.map((x) => ({
-        uri: x.node.frontmatter.url,
-        name: x.node.frontmatter.name,
-        image: x.node.frontmatter.image.childImageSharp.fixed,
-      }))}
-    />
+    <StyledList>
+      <ul>
+        {types.map((x, idx) => (
+          <li key={idx}>
+            <a
+              onClick={() => setType(x.type)}
+              className={x.type === type ? 'active' : ''}
+            >
+              {x.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <Persons
+        items={edges
+          .filter((x) => type === x.node.frontmatter.type)
+          .map((x) => ({
+            uri: x.node.frontmatter.url,
+            name: x.node.frontmatter.name,
+            image: x.node.frontmatter.image.childImageSharp.fixed,
+          }))}
+      />
+    </StyledList>
   );
 };
 

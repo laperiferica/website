@@ -16,6 +16,7 @@ const FriendsPage = ({ intl }) => (
       <List />
     </Section>
     <Map />
+    <div style={{ marginBottom: '-3rem' }} />
   </Layout>
 );
 
