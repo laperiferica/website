@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
+import { FormattedMessage } from 'gatsby-plugin-intl';
 
 import Persons from '../Persons';
 
@@ -14,12 +15,20 @@ const StyledList = styled.div`
     li {
       // display: inline-block;
       text-transform: uppercase;
+      &.active {
+        border-bottom: 2px solid var(--primary-color);
+      }
+      margin: 0 1rem;
       a {
+        display: inline-block;
+        line-height: 1rem;
+        text-align: center;
         font-size: 1.4rem;
-        margin: 1rem;
+        padding: 0.5rem 1rem;
         cursor: pointer;
-        &.active {
-          border-bottom: 2px solid var(--primary-color);
+        small {
+          font-size: 0.7rem;
+          display: inline-block;
         }
       }
     }
@@ -28,8 +37,8 @@ const StyledList = styled.div`
 
 const types = [
   { type: 'friend', label: 'Friends' },
-  { type: 'liked', label: 'Liked' },
-  { type: 'networks', label: 'Networks' },
+  { type: 'liked', label: 'We Love' },
+  { type: 'networks', label: 'Networks', sublabel: '(We are members)' },
   { type: 'collaborator', label: 'Collaborators' },
 ];
 
@@ -67,12 +76,17 @@ const List = () => {
     <StyledList>
       <ul>
         {types.map((x, idx) => (
-          <li key={idx}>
-            <a
-              onClick={() => setType(x.type)}
-              className={x.type === type ? 'active' : ''}
-            >
-              {x.label}
+          <li key={idx} className={x.type === type ? 'active' : ''}>
+            <a onClick={() => setType(x.type)}>
+              <FormattedMessage id={x.label} />
+              {x.sublabel && (
+                <>
+                  <br />
+                  <small>
+                    <FormattedMessage id={x.sublabel} />
+                  </small>
+                </>
+              )}
             </a>
           </li>
         ))}
