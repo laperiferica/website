@@ -6,7 +6,7 @@ import Carousel, { Modal, ModalGateway } from 'react-images';
 import Item from './Item';
 
 const StyledGrid = styled.section`
-  margin: 1rem 0;
+  margin: 3rem 0 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
   grid-gap: 1rem;
