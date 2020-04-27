@@ -8,34 +8,10 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Section from '../components/Section';
 
-const ProjectsPage = ({ intl }) => {
+const ProjectsPage = ({ data, intl }) => {
   const {
-    projects: { edges },
-  } = useStaticQuery(graphql`
-    {
-      projects: allMarkdownRemark(
-        filter: { fileInfo: { sourceInstanceName: { eq: "projects" } } }
-        sort: { fields: frontmatter___title, order: ASC }
-        limit: 6
-      ) {
-        edges {
-          node {
-            frontmatter {
-              slug
-              title
-              image {
-                childImageSharp {
-                  fixed(quality: 95, width: 300, height: 250) {
-                    ...GatsbyImageSharpFixed_withWebp
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  `);
+    items: { edges },
+  } = data;
 
   return (
     <Layout>
@@ -57,6 +33,40 @@ ProjectsPage.propTypes = {
   intl: PropTypes.shape({
     formatMessage: PropTypes.func,
   }),
+  data: PropTypes.shape({
+    items: PropTypes.shape({
+      edges: PropTypes.array,
+    }),
+  }),
 };
 
 export default injectIntl(ProjectsPage);
+
+export const pageQuery = graphql`
+  query($language: String) {
+    items: allMarkdownRemark(
+      filter: {
+        fileInfo: { sourceInstanceName: { eq: "projects" } }
+        frontmatter: { lang: { eq: $language } }
+      }
+      sort: { fields: frontmatter___title, order: ASC }
+      limit: 6
+    ) {
+      edges {
+        node {
+          frontmatter {
+            slug
+            title
+            image {
+              childImageSharp {
+                fixed(quality: 95, width: 300, height: 250) {
+                  ...GatsbyImageSharpFixed_withWebp
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;

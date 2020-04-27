@@ -1,5 +1,6 @@
 ---
 slug: las-fiestas-del-mañana
+lang: es
 title: Las fiestas del mañana
 image: featured.jpg
 gallery:

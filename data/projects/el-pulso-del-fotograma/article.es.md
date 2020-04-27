@@ -1,5 +1,6 @@
 ---
 slug: el-pulso-del-fotograma
+lang: es
 title: El pulso del fotograma
 image: featured.jpg
 gallery:

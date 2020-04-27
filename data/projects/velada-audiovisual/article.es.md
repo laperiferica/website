@@ -1,5 +1,6 @@
 ---
 slug: velada-audiovisual
+lang: es
 title: Velada Audiovisual
 image: featured.jpg
 gallery:
