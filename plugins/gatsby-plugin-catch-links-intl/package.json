@@ -1,0 +1,29 @@
+{
+  "name": "gatsby-plugin-catch-links-intl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/runtime": "^7.9.2",
+    "escape-string-regexp": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "babel-preset-gatsby-package": "^0.4.0",
+    "cross-env": "^7.0.2"
+  },
+  "peerDependencies": {
+    "gatsby-plugin-intl": "^0.3.3"
+  },
+  "scripts": {
+    "build": "babel src --out-dir . --ignore \"**/__tests__\"",
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir . --ignore \"**/__tests__\""
+  },
+  "engines": {
+    "node": ">=10.13.0"
+  }
+}

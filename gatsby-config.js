@@ -15,6 +15,12 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-styled-components',
     {
+      resolve: 'gatsby-plugin-catch-links-intl',
+      options: {
+        excludePattern: /(\/es\/|\/en\/)/,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-prefetch-google-fonts',
       options: {
         fonts: [

@@ -45,8 +45,11 @@ const Go2Top = () => {
       window.removeEventListener('scroll', fn);
     };
   }, []);
+  const go2top = () => {
+    window.scrollTo({ top: 0 });
+  };
   return (
-    <StyledGo2Top href="#" className={'go2top'}>
+    <StyledGo2Top tabIndex={0} onClick={() => go2top()} className={'go2top'}>
       <FaChevronUp size={'25px'} />
     </StyledGo2Top>
   );
