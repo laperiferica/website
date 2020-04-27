@@ -12,7 +12,13 @@ const StyledList = styled.div`
     list-style: none;
     margin: 0 0 3rem;
     padding: 0;
+    @media (max-width: 830px) {
+      & {
+        flex-direction: column;
+      }
+    }
     li {
+      text-align: center;
       // display: inline-block;
       text-transform: uppercase;
       &.active {

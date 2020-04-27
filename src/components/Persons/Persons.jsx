@@ -10,6 +10,7 @@ const StyledPersons = styled.ul`
   list-style: none;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   > li {
     padding: 1.5rem;
