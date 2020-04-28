@@ -39,11 +39,11 @@ self.__precacheManifest = [
     "url": "framework-2c421c5423d30cc6e0a0.js"
   },
   {
-    "url": "app-5a14573f7ce07b01bd09.js"
+    "url": "app-0095dc0b72cf1d32427e.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "aa0c1ed5857d0e2d98a94223ead89c78"
+    "revision": "87868135e39ad9a618f47ac1f5fdb0f6"
   },
   {
     "url": "google-fonts/s/droidsans/v12/SlGVmQWMvZQIdix7AFxXkHNSbQ.woff2",
@@ -58,7 +58,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "e0e916a7e31bf88645334a26801f3a36"
+    "revision": "757b3e0f48415c23991d406550002364"
   },
   {
     "url": "manifest.webmanifest",
@@ -155,7 +155,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/website/app-5a14573f7ce07b01bd09.js`))) {
+  if (!resources || !(await caches.match(`/website/app-0095dc0b72cf1d32427e.js`))) {
     return await fetch(event.request)
   }
 
