@@ -25,11 +25,15 @@ Duis quam tortor, sollicitudin vitae ligula in, pellentesque sollicitudin massa.
 Nunc in ultricies purus, at dapibus lacus. Aliquam dictum convallis est vel
 luctus. Quisque a enim ac sem porttitor elementum quis ut mi.
 
+![](image.jpg)
+
 Donec ac erat tristique, blandit velit at, suscipit ligula. Phasellus sed
 tincidunt mi. Proin id urna sodales, finibus felis in, porta erat. Aliquam in
 elementum felis, non convallis enim. Phasellus commodo finibus urna. Phasellus
 ac facilisis felis. Cras eleifend felis at turpis venenatis, fringilla blandit
 purus vestibulum. Nunc sit amet facilisis nisl.
+
+[PDF Download example](file-sample_150kB.pdf)
 
 Donec pellentesque elementum auctor. In mollis massa ac sem bibendum vestibulum.
 Sed vitae magna finibus, iaculis lectus a, semper magna. Quisque convallis quis

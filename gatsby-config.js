@@ -90,6 +90,8 @@ module.exports = {
       options: {
         plugins: [
           'gatsby-remark-embedder',
+          'gatsby-remark-images',
+          'gatsby-remark-copy-linked-files',
           {
             resolve: 'gatsby-remark-external-links',
             options: {
