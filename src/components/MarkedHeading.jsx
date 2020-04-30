@@ -6,6 +6,8 @@ const StyledMarkedHeading = styled.h2`
   display: inline-block;
   position: relative;
   padding: 0.5rem 0.6rem 0.1rem;
+  // TODO Avoid using important
+  margin-bottom: 3rem !important;
   &::before {
     content: ' ';
     position: absolute;
