@@ -9,7 +9,6 @@ const StyledSection = styled.section`
   padding: 1.5rem;
   max-width: 1024px;
   margin: 0 auto;
-  text-align: justify;
   h2 {
     margin-bottom: 2rem;
   }

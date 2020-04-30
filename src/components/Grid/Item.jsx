@@ -38,10 +38,13 @@ const StyledItem = styled.div`
     }
   }
 
-  a:hover {
+  a {
     color: white;
-    .image {
-      transform: scale(1.2);
+    &:hover {
+      color: white;
+      .image {
+        transform: scale(1.2);
+      }
     }
   }
 `;

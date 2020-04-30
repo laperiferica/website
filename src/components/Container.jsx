@@ -6,7 +6,6 @@ const StyledContainer = styled.div`
   padding: 1.5rem;
   max-width: 1024px;
   margin: 0 auto;
-  text-align: justify;
 `;
 
 const Container = ({ children, id }) => (

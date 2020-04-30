@@ -12,12 +12,8 @@ import SEO from '../components/SEO';
 import MarkerHeading from '../components/MarkedHeading';
 
 const StyledProjectPage = styled.article`
-  text-align: justify;
   max-width: 900px;
   margin: 0 auto;
-  .center {
-    text-align: center;
-  }
   h4.gallery,
   h4.share {
     margin-top: 3rem;

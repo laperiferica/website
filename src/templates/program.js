@@ -45,7 +45,7 @@ const ProgramPage = ({
         <center>
           <MarkerHeading>{frontmatter.title}</MarkerHeading>
         </center>
-        <div className={'content'} dangerouslySetInnerHTML={{ __html: html }} />
+        <p className={'content'} dangerouslySetInnerHTML={{ __html: html }} />
 
         <h4 className={'share'}>
           {intl.formatMessage({ id: 'Share on your social networks' })}

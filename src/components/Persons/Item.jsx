@@ -23,6 +23,7 @@ const StyledItem = styled.li`
     list-style: none;
     > li {
       padding: 0;
+      margin: 0;
     }
   }
 `;
