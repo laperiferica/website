@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: '/website',
   siteMetadata: {
     title: 'La Periférica',
     description: 'La Periférica',
