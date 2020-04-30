@@ -12,7 +12,7 @@ import Grid from '../components/Grid';
 import MarkerHeading from '../components/MarkedHeading';
 
 const StyledProgramPage = styled.article`
-  text-align: justify;
+  text-align: left;
   word-break: break-word;
   max-width: 900px;
   margin: 0 auto;
@@ -25,6 +25,10 @@ const StyledProgramPage = styled.article`
   }
   .projects {
     margin-top: 2rem;
+  }
+
+  .content {
+    margin: 3rem 0;
   }
 `;
 
@@ -41,7 +45,7 @@ const ProgramPage = ({
         <center>
           <MarkerHeading>{frontmatter.title}</MarkerHeading>
         </center>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <div className={'content'} dangerouslySetInnerHTML={{ __html: html }} />
 
         <h4 className={'share'}>
           {intl.formatMessage({ id: 'Share on your social networks' })}

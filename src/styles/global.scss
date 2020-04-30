@@ -41,6 +41,10 @@ a {
   }
 }
 
+p {
+  line-height: 1.5rem;
+}
+
 .gatsby-image-wrapper,
 img {
   border-style: none;
@@ -90,8 +94,15 @@ blockquote {
   margin-bottom: 1.45rem;
 }
 
+iframe {
+  margin: 2rem 0;
+}
+
 ul {
   padding-left: 1rem;
+  li {
+    margin-bottom: 1rem;
+  }
 }
 
 blockquote {
