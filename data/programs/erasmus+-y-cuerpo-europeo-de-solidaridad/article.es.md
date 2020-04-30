@@ -29,6 +29,8 @@ Documental "Taste of diversity: Arts, Environment and Gastronomy" realizado por
 la videoartista Inés Bermejo sobre la experiencia en Marruecos con el
 Intercambio Juvenil del programa Eramus +
 
+## ¿Cómo funciona el CES?
+
 **El Cuerpo Europeo de Solidaridad (CES)** es un programa de financiación de la Unión
 Europea que crea oportunidades para que los jóvenes hagan voluntariado,
 trabajen, se formen y gestionen sus propios proyectos solidarios en beneficio de
@@ -41,8 +43,6 @@ Tras un sencillo proceso de inscripción, los participantes podrán resultar
 seleccionados para incorporarse a toda una serie de proyectos. Realizarán los
 proyectos del Cuerpo Europeo de Solidaridad organizaciones debidamente
 acreditadas y autorizadas para llevarlos a cabo.
-
-## ¿Cómo funciona el CES?
 
 El CES es una actividad educativa no formal que permite a los jóvenes de **entre
 18 y 30 años** expresar su compromiso personal mediante un **servicio voluntario de

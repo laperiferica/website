@@ -28,6 +28,8 @@ Documentary "Taste of diversity: Arts, Environment and Gastronomy" made by video
 artist Inés Bermejo about the experience in Morocco with the Youth Exchange of
 the Eramus + program
 
+## How the ESC works?
+
 **The European Solidarity Corps (ESC)** is a European Union funding program that
 creates opportunities for young people to volunteer, work, train and manage
 their own solidarity projects for the benefit of communities across Europe. The
@@ -37,8 +39,6 @@ The European Solidarity Corps officially became operational in December 2017.
 After a simple registration process, participants may be selected to join a
 whole series of projects. The projects of the European Solidarity Corps will be
 carried out by organizations duly accredited and authorized to carry them out.
-
-## How the ESC works?
 
 ESC is a non-formal educational activity that allows young people **between the
 ages of 18 and 30** to express their personal commitment through a **long-term
