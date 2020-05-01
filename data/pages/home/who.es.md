@@ -8,4 +8,4 @@ la vida cultural de la ciudad y de la provincia desde una visión innovadora,
 apoyando y fomentando el talento local, el intercambio y la cooperación
 internacional y sobre todo la implicación y participación ciudadana a través de
 proyectos artísticos y culturales que promuevan la reflexión de los retos y
-temas contemporáneos. [Conócenos mejor...](/who)
+temas contemporáneos. [Conócenos mejor](/who)
