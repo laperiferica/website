@@ -1,5 +1,6 @@
 ---
 slug: example
+lang: es
 title: Example
 date: 2020-04-17
 image: image.jpg

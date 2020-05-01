@@ -55,7 +55,7 @@ const ProjectPage = ({
             items={frontmatter.gallery.map((x) => ({
               title: x.title,
               thumbnail: x.image.thumbnail.fixed,
-              full: x.image.full.fixed,
+              full: x.image.full.fluid,
             }))}
           />
         )}
@@ -121,8 +121,8 @@ export const pageQuery = graphql`
               }
             }
             full: childImageSharp {
-              fixed(quality: 95, width: 1280, height: 720, fit: INSIDE) {
-                ...GatsbyImageSharpFixed_withWebp
+              fluid(quality: 95) {
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }

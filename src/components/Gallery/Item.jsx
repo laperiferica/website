@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import GatsbyImage from 'gatsby-image';
 
 const StyledItem = styled.div`
@@ -42,8 +42,6 @@ const Item = ({ thumbnail, title, even, onClick }) => (
   <StyledItem even={even} onClick={onClick}>
     <div className={'image'}>
       <GatsbyImage
-        objectFit={'cover'}
-        objectPosition={'100% 0'}
         width={'100%'}
         height={'100%'}
         maxHeight={'25rem'}

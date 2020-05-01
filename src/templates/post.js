@@ -50,7 +50,7 @@ const PostPage = ({
             items={frontmatter.gallery.map((x) => ({
               title: x.title,
               thumbnail: x.image.thumbnail.fixed,
-              full: x.image.full.fixed,
+              full: x.image.full.fluid,
             }))}
           />
         )}
@@ -92,9 +92,9 @@ PostPage.propTypes = {
 export default injectIntl(PostPage);
 
 export const pageQuery = graphql`
-  query($slug: String) {
+  query($slug: String, $language: String) {
     markdownRemark(
-      frontmatter: { slug: { eq: $slug } }
+      frontmatter: { slug: { eq: $slug }, lang: { eq: $language } }
       fileInfo: { sourceInstanceName: { eq: "posts" } }
     ) {
       frontmatter {
@@ -110,23 +110,13 @@ export const pageQuery = graphql`
               }
             }
             full: childImageSharp {
-              fixed(quality: 95, width: 1280, height: 720, fit: INSIDE) {
-                ...GatsbyImageSharpFixed_withWebp
+              fluid(quality: 95) {
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }
         }
         date(formatString: "d/M/YYYY")
-        image {
-          childImageSharp {
-            fluid(quality: 95) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-            fixed(quality: 95, height: 500) {
-              ...GatsbyImageSharpFixed_withWebp
-            }
-          }
-        }
       }
       html
     }
