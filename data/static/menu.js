@@ -7,7 +7,7 @@ export default {
       to: '/programs/erasmus+-y-cuerpo-europeo-de-solidaridad',
     },
     // { title: 'Noticias', to: '/posts' },
-    { title: 'Friends', to: '/friends' },
+    { title: 'Conexions', to: '/conexions' },
     { title: 'Contact', to: '/contact' },
   ],
   breakpoint: 980,

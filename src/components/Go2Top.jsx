@@ -9,16 +9,15 @@ const StyledGo2Top = styled.a`
   bottom: 16px;
   right: 16px;
   cursor: pointer;
-  background-color: var(--text-color);
+  background-color: black;
   padding: 12px 8px 8px 8px;
   width: 60px;
   height: 60px;
   text-align: center;
   font-size: 16px;
   z-index: 1100;
-  text-decoration: none;
   border-radius: 50%;
-
+  color: var(--primary-color);
   &:hover {
     color: white;
   }

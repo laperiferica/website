@@ -10,8 +10,11 @@ const StyledFooter = styled.footer`
   background: black;
   color: white;
   text-align: center;
-  a:hover {
-    color: white;
+  a {
+    color: var(--primary-color);
+    &:hover {
+      color: white;
+    }
   }
   .copy {
     text-transform: uppercase;

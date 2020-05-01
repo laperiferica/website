@@ -27,7 +27,7 @@ button,
 a {
   transition: color, background-color 0.3s;
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--text-color);
   &:focus {
     outline: none;
   }
