@@ -8,7 +8,7 @@ import SEO from '../components/SEO';
 import Section from '../components/Section';
 
 import Conexions from '../components/Conexions';
-import Map from '../components/friends/Map';
+import Map from '../components/Map';
 
 const ConexionsPage = ({ intl, data }) => {
   const [type, setType] = useState('friend');
@@ -27,7 +27,17 @@ const ConexionsPage = ({ intl, data }) => {
           }))}
         />
       </Section>
-      {type === 'friend' && <Map />}
+      {type === 'friend' && (
+        <Map
+          items={data.conexions.edges.map((x) => ({
+            lat: x.node.frontmatter.lat,
+            lng: x.node.frontmatter.lng,
+            name: x.node.frontmatter.name,
+            url: x.node.frontmatter.url,
+            image: x.node.frontmatter.image.childImageSharp.fixed,
+          }))}
+        />
+      )}
       <div style={{ marginBottom: '-3rem' }} />
     </Layout>
   );
@@ -47,6 +57,8 @@ ConexionsPage.propTypes = {
               name: PropTypes.string,
               url: PropTypes.string,
               image: PropTypes.object,
+              lat: PropTypes.number,
+              lng: PropTypes.number,
             }),
           }),
         })
@@ -69,6 +81,8 @@ export const pageQuery = graphql`
             type
             name
             url
+            lat
+            lng
             image {
               childImageSharp {
                 fixed(quality: 95, width: 100, height: 100) {
