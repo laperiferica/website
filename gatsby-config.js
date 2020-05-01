@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: 'La Periférica',
-    description: 'La Periférica',
+    description: 'La Periférica Cultura Contemporánea',
     author: '@jlopezcur',
-    // siteUrl: 'https://laperiferica.github.io/website'
+    siteUrl: 'https://laperifericacc.com',
   },
   mapping: {
     'MarkdownRemark.frontmatter.programs': 'MarkdownRemark.frontmatter.slug',
@@ -125,18 +125,18 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-    // 'gatsby-plugin-sitemap'
-    // {
-    //   resolve: 'gatsby-plugin-google-analytics',
-    //   options: {
-    //     trackingId: 'UA-47318809-3',
-    //     head: false,
-    //     anonymize: true,
-    //     respectDNT: true,
-    //     sampleRate: 5,
-    //     siteSpeedSampleRate: 10,
-    //     cookieDomain: 'laperiferica.com',
-    //   },
-    // },
+    'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-165266387-1',
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        cookieDomain: 'laperifericacc.com',
+      },
+    },
   ],
 };
