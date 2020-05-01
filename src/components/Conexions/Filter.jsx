@@ -6,7 +6,7 @@ import { FormattedMessage } from 'gatsby-plugin-intl';
 const StyledFilter = styled.div`
   .filters {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
     grid-gap: 2rem;
     justify-content: center;
     margin: 0 0 3rem;
