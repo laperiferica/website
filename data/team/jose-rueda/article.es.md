@@ -1,7 +1,8 @@
 ---
-slug: jose-rueda
-name: Jose Rueda
-email: jose[a]laperifericacc.com
+slug: jose
+lang: es
+name: Jose
+email: jose@laperifericacc.com
 tasks:
   - Gestión Musical
   - Comunicación

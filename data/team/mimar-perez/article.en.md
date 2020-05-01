@@ -1,7 +1,8 @@
 ---
-slug: mimar-perez
-name: Mimar Pérez
-email: mimar[a]laperifericacc.com
+slug: mimar
+lang: en
+name: Mimar
+email: mimar@laperifericacc.com
 tasks:
   - Diseño Gráfico
   - Educación

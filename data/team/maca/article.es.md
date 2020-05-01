@@ -1,7 +1,8 @@
 ---
 slug: maca
+lang: es
 name: Maca
-email: maca[a]laperifericacc.com
+email: maca@laperifericacc.com
 tasks:
   - Gestión Cultural
   - Cooperación

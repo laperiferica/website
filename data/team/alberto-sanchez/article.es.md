@@ -1,7 +1,8 @@
 ---
-slug: alberto-sanchez
-name: Alberto Sánchez
-email: alberto[a]laperifericacc.com
+slug: alberto
+lang: es
+name: Alberto
+email: alberto@laperifericacc.com
 tasks:
   - Gestión Cultural
   - Antropología

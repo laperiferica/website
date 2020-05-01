@@ -7,7 +7,7 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Section from '../components/Section';
 
-import Team from '../components/contact/Team';
+import Team from '../components/Team';
 
 const WhoPage = ({ data, intl }) => (
   <Layout>
@@ -15,9 +15,15 @@ const WhoPage = ({ data, intl }) => (
     <Section id={'info'} title={intl.formatMessage({ id: 'Who we are' })}>
       <div dangerouslySetInnerHTML={{ __html: data.text.html }} />
     </Section>
-    <Section id={'members'}>
-      <Team />
-    </Section>
+    <Team
+      items={data.team.edges.map((x) => ({
+        uri: `/who/team/${x.node.frontmatter.slug}`,
+        name: x.node.frontmatter.name,
+        image: x.node.frontmatter.image.childImageSharp.fixed,
+        tasks: x.node.frontmatter.tasks,
+        email: x.node.frontmatter.email,
+      }))}
+    />
   </Layout>
 );
 
@@ -41,6 +47,30 @@ export const pageQuery = graphql`
       fileInfo: { sourceInstanceName: { eq: "pages" } }
     ) {
       html
+    }
+    team: allMarkdownRemark(
+      filter: {
+        fileInfo: { sourceInstanceName: { eq: "team" } }
+        frontmatter: { lang: { eq: $language } }
+      }
+      sort: { fields: frontmatter___name, order: ASC }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            slug
+            name
+            tasks
+            image {
+              childImageSharp {
+                fixed(quality: 95, width: 160, height: 160) {
+                  ...GatsbyImageSharpFixed_withWebp
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 `;

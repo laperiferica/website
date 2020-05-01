@@ -8,6 +8,7 @@ const StyledMarkedHeading = styled.h2`
   padding: 0.5rem 0.6rem 0.1rem;
   // TODO Avoid using important
   margin-bottom: 3rem !important;
+  color: ${(props) => props.color};
   &::before {
     content: ' ';
     position: absolute;
@@ -18,19 +19,28 @@ const StyledMarkedHeading = styled.h2`
     z-index: -1;
     background-image: linear-gradient(
       to right,
-      var(--marked-text-color) 0,
-      var(--marked-text-color) 100%
+      ${(props) => `var(--marked-${props.bg}-color)`} 0,
+      ${(props) => `var(--marked-${props.bg}-color)`} 100%
     );
     transform: rotate(0.4deg) skew(-10deg);
   }
 `;
 
-const MarkerHeading = ({ children }) => (
-  <StyledMarkedHeading>{children}</StyledMarkedHeading>
+const MarkerHeading = ({ children, bg, color }) => (
+  <StyledMarkedHeading bg={bg} color={color}>
+    {children}
+  </StyledMarkedHeading>
 );
 
 MarkerHeading.propTypes = {
   children: PropTypes.node,
+  bg: PropTypes.oneOf(['yellow', 'green']),
+  color: PropTypes.oneOf(['white', 'black']),
+};
+
+MarkerHeading.defaultProps = {
+  bg: 'yellow',
+  color: 'black',
 };
 
 export default MarkerHeading;

@@ -1,7 +1,8 @@
 ---
-slug: irene-miranda
-name: Irene Miranda
-email: irene[a]laperifericacc.com
+slug: irene
+lang: es
+name: Irene
+email: irene@laperifericacc.com
 tasks:
   - Gestión Cultural
   - Educación

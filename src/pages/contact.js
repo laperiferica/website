@@ -7,8 +7,6 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Section from '../components/Section';
 
-import Team from '../components/contact/Team';
-
 import meta from '../../data/static/meta';
 import image from '../images/team.jpg';
 
@@ -36,9 +34,6 @@ const ContactPage = ({ intl }) => (
         <img src={image} alt={'Foto del equipo'} />
       </Section>
     </StyledContactPage>
-    <Section id={'team-contact'}>
-      <Team />
-    </Section>
   </Layout>
 );
 

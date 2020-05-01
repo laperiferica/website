@@ -7,8 +7,23 @@ import GatsbyImage from 'gatsby-image';
 import Layout from '../components/Layout';
 import Container from '../components/Container';
 import SEO from '../components/SEO';
+import MarkerHeading from '../components/MarkedHeading';
 
-const StyleArticle = styled.article``;
+const StyleArticle = styled.article`
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      z-index: 3;
+      margin-top: -2rem;
+    }
+    .gatsby-image-wrapper {
+      border-radius: 50%;
+      filter: grayscale(100%);
+    }
+  }
+`;
 
 const TeamPage = ({
   data: {
@@ -19,8 +34,12 @@ const TeamPage = ({
     <SEO title={frontmatter.name} />
     <Container>
       <StyleArticle>
-        <GatsbyImage fixed={frontmatter.image.childImageSharp.fixed} />
-        <h2>{frontmatter.name}</h2>
+        <div className={'heading'}>
+          <GatsbyImage fixed={frontmatter.image.childImageSharp.fixed} />
+          <MarkerHeading bg={'green'} color={'white'}>
+            {frontmatter.name}
+          </MarkerHeading>
+        </div>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </StyleArticle>
     </Container>
@@ -44,9 +63,9 @@ TeamPage.propTypes = {
 export default TeamPage;
 
 export const pageQuery = graphql`
-  query($slug: String) {
+  query($slug: String, $language: String) {
     markdownRemark(
-      frontmatter: { slug: { eq: $slug } }
+      frontmatter: { slug: { eq: $slug }, lang: { eq: $language } }
       fileInfo: { sourceInstanceName: { eq: "team" } }
     ) {
       frontmatter {
