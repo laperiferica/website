@@ -24,6 +24,7 @@ const StyledFilter = styled.div`
         display: block;
         padding: 1rem 1rem;
         cursor: pointer;
+        color: black;
         div {
           font-size: 1.4rem;
           font-weight: 900;
