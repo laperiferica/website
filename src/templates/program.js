@@ -26,10 +26,6 @@ const StyledProgramPage = styled.article`
   .projects {
     margin-top: 2rem;
   }
-
-  .content {
-    margin: 3rem 0;
-  }
 `;
 
 const ProgramPage = ({
@@ -45,7 +41,8 @@ const ProgramPage = ({
         <center>
           <MarkerHeading>{frontmatter.title}</MarkerHeading>
         </center>
-        <p className={'content'} dangerouslySetInnerHTML={{ __html: html }} />
+
+        <p dangerouslySetInnerHTML={{ __html: html }} />
 
         <h4 className={'share'}>
           {intl.formatMessage({ id: 'Share on your social networks' })}

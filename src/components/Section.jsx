@@ -8,7 +8,7 @@ import MarkerHeading from './MarkedHeading';
 const StyledSection = styled.section`
   padding: 1.5rem;
   max-width: 1024px;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
   h2 {
     margin-bottom: 2rem;
   }
