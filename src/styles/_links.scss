@@ -2,7 +2,7 @@ button,
 a {
   transition: color, background-color 0.3s;
   text-decoration: none;
-  color: #517d25;
+  color: #ce00ce;
   transition: all 0.5s;
   font-weight: bold;
   &:focus {
@@ -14,7 +14,6 @@ a {
     text-decoration: none;
   }
   &:hover {
-    color: var(--primary-color);
+    color: #ce00ce;
   }
 }
-
