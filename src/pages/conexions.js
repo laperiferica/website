@@ -9,6 +9,7 @@ import Section from '../components/Section';
 
 import Conexions from '../components/Conexions';
 import Map from '../components/Map';
+import MarkerHeading from '../components/MarkedHeading';
 
 const ConexionsPage = ({ intl, data }) => {
   const [type, setType] = useState('friend');
@@ -27,17 +28,29 @@ const ConexionsPage = ({ intl, data }) => {
           }))}
         />
       </Section>
-      {type === 'friend' && (
-        <Map
-          items={data.conexions.edges.map((x) => ({
-            lat: x.node.frontmatter.lat,
-            lng: x.node.frontmatter.lng,
-            name: x.node.frontmatter.name,
-            url: x.node.frontmatter.url,
-            image: x.node.frontmatter.image.childImageSharp.fixed,
-          }))}
-        />
-      )}
+
+      <center>
+        <MarkerHeading>Heterotopías Almerienses</MarkerHeading>
+      </center>
+      <p
+        style={{
+          textAlign: 'center',
+          marginTop: '-2.5rem',
+          marginBottom: '3.5rem',
+        }}
+      >
+        Heterotopías bla blab bla
+      </p>
+
+      <Map
+        items={data.conexions.edges.map((x) => ({
+          lat: x.node.frontmatter.lat,
+          lng: x.node.frontmatter.lng,
+          name: x.node.frontmatter.name,
+          url: x.node.frontmatter.url,
+          image: x.node.frontmatter.image.childImageSharp.fixed,
+        }))}
+      />
       <div style={{ marginBottom: '-3rem' }} />
     </Layout>
   );

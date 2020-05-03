@@ -10,8 +10,26 @@ const StyledItem = styled.li`
   max-width: 100px;
   text-align: center;
   a {
+    .container {
+      border-radius: 50%;
+      overflow: hidden;
+      .image {
+        height: 100px;
+        transition: all 0.3s;
+      }
+      margin-bottom: 1rem;
+    }
+    color: black;
     .gatsby-image-wrapper {
       border-radius: 50%;
+      margin: 0;
+    }
+  }
+  a {
+    &:hover {
+      .image {
+        transform: scale(1.1);
+      }
     }
   }
 `;
@@ -19,7 +37,11 @@ const StyledItem = styled.li`
 const Item = ({ url, image, name }) => (
   <StyledItem>
     <BiLink url={url}>
-      <GatsbyImage fixed={image} alt={`Imágen de ${name}`} />
+      <div className={'container'}>
+        <div className={'image'}>
+          <GatsbyImage fixed={image} alt={`Imágen de ${name}`} />
+        </div>
+      </div>
       <h4>{name}</h4>
     </BiLink>
   </StyledItem>

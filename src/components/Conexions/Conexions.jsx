@@ -12,7 +12,7 @@ const StyledConexions = styled.div`
     list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     > li {
       padding: 1.5rem;

@@ -6,7 +6,7 @@ import { Link, FormattedMessage } from 'gatsby-plugin-intl';
 
 const StyledFooter = styled.footer`
   margin: auto 0 0 0;
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 3rem;
   background: black;
   color: white;
   text-align: center;
