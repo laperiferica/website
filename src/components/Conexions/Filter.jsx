@@ -25,6 +25,7 @@ const StyledFilter = styled.div`
         padding: 1rem 1rem;
         cursor: pointer;
         color: black;
+        text-align: center;
         div {
           font-size: 1.4rem;
           font-weight: 900;
@@ -69,7 +70,7 @@ const StyledFilter = styled.div`
 `;
 
 const types = [
-  { type: 'friend', label: 'Our friends' },
+  { type: 'friend', label: 'We love it' },
   { type: 'collaborator', label: 'We collaborate with' },
   { type: 'networks', label: 'We belong to' },
 ];
