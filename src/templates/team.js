@@ -7,16 +7,24 @@ import GatsbyImage from 'gatsby-image';
 import Layout from '../components/Layout';
 import Container from '../components/Container';
 import SEO from '../components/SEO';
-import MarkerHeading from '../components/MarkedHeading';
 
 const StyleArticle = styled.article`
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0) 200px,
+    black 201px,
+    black 100%
+  );
+  color: white;
   .heading {
     display: flex;
     flex-direction: column;
     align-items: center;
     h2 {
       z-index: 3;
-      margin-top: -2rem;
+      border-bottom: 2px solid #f8f82c;
+      padding: 0 1rem 0.2rem;
     }
     .gatsby-image-wrapper {
       border-radius: 50%;
@@ -32,17 +40,16 @@ const TeamPage = ({
 }) => (
   <Layout>
     <SEO title={frontmatter.name} />
-    <Container>
-      <StyleArticle>
+    <StyleArticle>
+      <Container>
         <div className={'heading'}>
           <GatsbyImage fixed={frontmatter.image.childImageSharp.fixed} />
-          <MarkerHeading bg={'green'} color={'white'}>
-            {frontmatter.name}
-          </MarkerHeading>
+          <h2>{frontmatter.name}</h2>
         </div>
         <div dangerouslySetInnerHTML={{ __html: html }} />
-      </StyleArticle>
-    </Container>
+      </Container>
+      <div style={{ marginBottom: '-3rem' }} />
+    </StyleArticle>
   </Layout>
 );
 
