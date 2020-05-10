@@ -10,11 +10,13 @@ import Section from '../components/Section';
 
 import meta from '../../data/static/meta';
 import image from '../images/team.jpg';
+import imageMobile from '../images/team-mobile.jpg';
 
 const StyledContactPage = styled.div`
   .info {
     display: grid;
     grid-template-columns: 1fr 2px 1fr;
+
     grid-gap: 1rem;
     max-width: 427px;
     margin: 0 auto;
@@ -27,14 +29,36 @@ const StyledContactPage = styled.div`
       height: 100%;
       background-color: black;
     }
+    .full {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
   }
+  @media (max-width: 980px) {
+    .info {
+      grid-template-columns: 1fr;
+      .left,
+      .right,
+      .full {
+        text-align: center;
+      }
+
+      .separator {
+        display: none;
+      }
+      .full {
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+    }
+  }
+
   .image {
     margin-top: 2rem;
     position: relative;
     img {
       width: 100%;
     }
-
     .box {
       position: absolute;
       padding: 0.2rem 0.3rem;
@@ -47,14 +71,56 @@ const StyledContactPage = styled.div`
       }
     }
   }
+
+  .image-mobile {
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+    img {
+      width: 100%;
+    }
+    display: none;
+  }
+
+  @media (max-width: 980px) {
+    .image {
+      display: none;
+    }
+    .image-mobile {
+      display: block;
+    }
+  }
 `;
 
-const teamPositions = {
-  alberto: { pos: ['51%', '3%'], align: 'left' },
-  irene: { pos: ['9%', '68%'], align: 'right' },
-  jose: { pos: ['80%', '29%'], align: 'left' },
-  maca: { pos: ['-10%', '41%'], align: 'right' },
-  mimar: { pos: ['39%', '74%'], align: 'left' },
+const teamMeta = {
+  alberto: {
+    pos: ['51%', '3%'],
+    align: 'left',
+    poly:
+      '543,609 564,354 562,236 533,203 546,191 582,183 588,172 577,111 591,88 637,87 651,103 662,145 661,159 654,175 704,188 714,216 701,243 708,258 730,322 708,413 708,508 703,538 679,610',
+  },
+  irene: {
+    pos: ['9%', '68%'],
+    align: 'right',
+    poly:
+      '256,609 253,583 225,592 204,510 232,497 229,464 215,443 230,312 275,246 305,232 319,147 355,117 390,139 403,183 423,341 376,610',
+  },
+  jose: {
+    pos: ['80%', '29%'],
+    align: 'left',
+    poly:
+      '741,610 714,492 705,418 729,317 700,241 712,210 735,185 713,159 712,99 749,78 787,95 795,131 798,161 816,175 853,182 888,215 953,318 941,359 879,443 857,452 848,610',
+  },
+  maca: {
+    pos: ['-10%', '41%'],
+    align: 'right',
+    poly: '230,309 97,307 101,54 283,58 278,244 251,273 234,308',
+  },
+  mimar: {
+    pos: ['39%', '74%'],
+    align: 'left',
+    poly:
+      '514,610 524,535 525,444 516,429 531,387 537,344 550,358 560,336 561,239 535,206 519,200 516,138 501,99 468,92 439,105 436,175 403,206 424,364 374,609',
+  },
 };
 
 const ContactPage = ({ intl, data }) => (
@@ -63,18 +129,9 @@ const ContactPage = ({ intl, data }) => (
     <StyledContactPage>
       <Section id={'email'} title={intl.formatMessage({ id: 'Contact' })}>
         <div className={'info'}>
-          <div className={'left'}>
-            Puedes escribirnos a:
-            <br />
-            <br />
-            ¡O puedes contactar
-            <br />
-            con cada uno de
-            <br />
-            nosotros!
-          </div>
+          <div className={'left'}>Puedes escribirnos a:</div>
           <div className={'separator'} />
-          <div>
+          <div className={'right'}>
             <a
               href={`mailto:${meta.email}`}
               target={'_blank'}
@@ -83,11 +140,15 @@ const ContactPage = ({ intl, data }) => (
               {meta.email}
             </a>
           </div>
+          <div className={'full'}>
+            ¡O puedes contactar con cada uno de nosotros!
+          </div>
         </div>
+
         <div className={'image'}>
           <img src={image} alt={'Foto del equipo'} />
           {data.team.edges.map((x, idx) => {
-            const { pos, align } = teamPositions[x.node.frontmatter.slug];
+            const { pos, align } = teamMeta[x.node.frontmatter.slug];
             return (
               <div
                 className={'box'}
@@ -101,12 +162,45 @@ const ContactPage = ({ intl, data }) => (
                 <a
                   href={`mailto:${x.node.frontmatter.email}`}
                   className={'weight-normal'}
+                  target={'_blank'}
+                  rel={'noopener noreferrer'}
                 >
                   {x.node.frontmatter.email}
                 </a>
               </div>
             );
           })}
+        </div>
+
+        <div className={'image-mobile'}>
+          <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 1024 610"
+            preserveAspectRatio="xMinYMin meet"
+          >
+            <image width="1024" height="610" xlinkHref={imageMobile} />
+            {data.team.edges.map((x, idx) => {
+              const { poly } = teamMeta[x.node.frontmatter.slug];
+              return (
+                <g className="member" key={idx}>
+                  <a
+                    xlinkHref={`mailto:${x.node.frontmatter.email}`}
+                    target={'_blank'}
+                    rel={'noopener noreferrer'}
+                  >
+                    <polygon
+                      points={poly}
+                      style={{
+                        fill: 'rgba(0,0,0,0)',
+                      }}
+                    />
+                  </a>
+                </g>
+              );
+            })}
+          </svg>
         </div>
       </Section>
     </StyledContactPage>
