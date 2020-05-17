@@ -31,7 +31,7 @@ valores atraviesan y son transversales a los proyectos que realizamos, desde
 los contenidos hasta la propia gestión.
 
 En La Periférica trabajamos siempre en equipo, de forma democrática, ejerciendo
-la escucha como principal herramienta de trabajo. [Nos aliamos](/friends),
+la escucha como principal herramienta de trabajo. [Nos aliamos](/conexions),
 siempre que es posible, con otras redes de profesionales e instituciones,
 asociaciones, colectivos, iniciativas y proyectos con los que compartimos
 visiones, valores y formas de hacer para alcanzar objetivos. Además, trabajamos

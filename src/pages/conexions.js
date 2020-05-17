@@ -17,6 +17,19 @@ const ConexionsPage = ({ intl, data }) => {
     <Layout>
       <SEO title={intl.formatMessage({ id: 'Conexions' })} />
       <Section id={'friends'} title={intl.formatMessage({ id: 'Conexions' })}>
+        <p
+          style={{
+            marginTop: '-2rem',
+            marginBottom: '3rem',
+            textAlign: 'center',
+          }}
+        >
+          En esta sección resaltamos diferentes artístas y colectivos a nivel
+          glocal que "nos encantan" (compartimos valores y nos gusta lo que
+          hacen), personas y entidades con las que hemos creado redes de
+          colabaración en diversos proyectos y organizaciones a las que nos
+          hemos asociado como miembros.
+        </p>
         <Conexions
           type={type}
           setType={setType}
@@ -25,6 +38,7 @@ const ConexionsPage = ({ intl, data }) => {
             name: x.node.frontmatter.name,
             url: x.node.frontmatter.url,
             image: x.node.frontmatter.image.childImageSharp.fixed,
+            tags: x.node.frontmatter.tags,
           }))}
         />
       </Section>
@@ -39,7 +53,9 @@ const ConexionsPage = ({ intl, data }) => {
           marginBottom: '3.5rem',
         }}
       >
-        Heterotopías bla blab bla
+        En este espacio queremos dar visibilidad a diversos proyectos de Almería
+        con los que sentimos que tenemos una visión común a la hora de entender
+        la cultura.
       </p>
 
       <Map
@@ -96,6 +112,7 @@ export const pageQuery = graphql`
             url
             lat
             lng
+            tags
             image {
               childImageSharp {
                 fixed(quality: 95, width: 100, height: 100) {

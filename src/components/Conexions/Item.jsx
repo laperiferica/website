@@ -32,9 +32,17 @@ const StyledItem = styled.li`
       }
     }
   }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      margin-bottom: 0rem;
+    }
+  }
 `;
 
-const Item = ({ url, image, name }) => (
+const Item = ({ url, image, name, tags }) => (
   <StyledItem>
     <BiLink url={url}>
       <div className={'container'}>
@@ -44,6 +52,13 @@ const Item = ({ url, image, name }) => (
       </div>
       <h4>{name}</h4>
     </BiLink>
+    {tags && (
+      <ul>
+        {tags.map((x, idx) => (
+          <li key={idx}>#{x}</li>
+        ))}
+      </ul>
+    )}
   </StyledItem>
 );
 
@@ -51,6 +66,7 @@ Item.propTypes = {
   url: PropTypes.string,
   image: PropTypes.object.isRequired,
   name: PropTypes.string.isRequired,
+  tags: PropTypes.array,
 };
 
 export default Item;

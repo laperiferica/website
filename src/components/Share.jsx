@@ -25,7 +25,8 @@ import { Location } from '@reach/router';
 const StyleShare = styled.div`
   @media (max-width: 600px) {
     & {
-      text-align: center;
+      text-align: left;
+      width: 216px;
     }
   }
   padding-bottom: 1rem;

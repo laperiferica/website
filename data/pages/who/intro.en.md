@@ -31,7 +31,7 @@ contribute to greater solidarity, at the glocal level. All these values
 contents to the management itself.
 
 At La Periférica we always work as a team, in a democratic way, exercising
-listening as the main work tool. [We partner](/friends), whenever possible,
+listening as the main work tool. [We partner](/conexions), whenever possible,
 with other networks of professionals and institutions, associations,
 collectives, initiatives and projects with which we share visions, values and
 ways of doing to achieve objectives. Furthermore, we work with numerous public
