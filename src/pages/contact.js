@@ -81,12 +81,19 @@ const StyledContactPage = styled.div`
     display: none;
   }
 
+  .only-mobile {
+    display: none;
+  }
+
   @media (max-width: 980px) {
     .image {
       display: none;
     }
     .image-mobile {
       display: block;
+    }
+    .only-mobile {
+      display: inline-block;
     }
   }
 `;
@@ -141,7 +148,10 @@ const ContactPage = ({ intl, data }) => (
             </a>
           </div>
           <div className={'full'}>
-            ¡O puedes contactar con cada uno de nosotros!
+            ¡O puedes contactar con cada uno de nosotros!{' '}
+            <span className={'only-mobile'}>
+              (Pincha sobre nuesrtas siluetas)
+            </span>
           </div>
         </div>
 
