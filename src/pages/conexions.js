@@ -16,7 +16,7 @@ const ConexionsPage = ({ intl, data }) => {
   return (
     <Layout>
       <SEO title={intl.formatMessage({ id: 'Conexions' })} />
-      <Section id={'friends'} title={intl.formatMessage({ id: 'Conexions' })}>
+      <Section id={'conexions'} title={intl.formatMessage({ id: 'Conexions' })}>
         <p
           style={{
             marginTop: '-2rem',
@@ -101,7 +101,7 @@ export default injectIntl(ConexionsPage);
 export const pageQuery = graphql`
   {
     conexions: allMarkdownRemark(
-      filter: { fileInfo: { sourceInstanceName: { eq: "friends" } } }
+      filter: { fileInfo: { sourceInstanceName: { eq: "conexions" } } }
       sort: { fields: frontmatter___name, order: ASC }
     ) {
       edges {
