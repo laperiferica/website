@@ -150,7 +150,7 @@ const ContactPage = ({ intl, data }) => (
           <div className={'full'}>
             ¡O puedes contactar con cada uno de nosotros!{' '}
             <span className={'only-mobile'}>
-              (Pincha sobre nuesrtas siluetas)
+              (Pincha sobre nuestras siluetas)
             </span>
           </div>
         </div>
