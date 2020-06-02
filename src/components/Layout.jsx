@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import Header from './Header';
 import Footer from './Footer';
 import Go2Top from './Go2Top';
+import Cookies from './Cookies';
 
 const StyledLayout = styled.div`
   display: flex;
@@ -35,6 +36,7 @@ const Layout = ({ children }) => {
       <main>{children}</main>
       <Footer title={meta.title} />
       <Go2Top />
+      <Cookies />
     </StyledLayout>
   );
 };
