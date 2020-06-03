@@ -19,9 +19,7 @@ proyectos no dudes en contactarnos.
 Más información sobre el programa Erasmus +:
 http://www.erasmusplus.gob.es/index.html
 
-Proyecto Erasmus + realizado por La Periférica: Tastes of Diversity: Arts,
-Environment and Gastronomy. Intercambio Juvenil con España, Alemania y
-Marruecos. Realizado en los pueblos de Agdz y Timidarte en el sur de Marruecos.
+Proyecto Erasmus + realizado por Omse e.V., IES Almeraya, La Guajira y La Periférica: Tastes of Diversity: Arts, Environment and Gastronomy. Intercambio juvenil con España, Alemania y Marruecos. Hecho en las ciudades de Agdz y Timidarte en el sur de Marruecos.
 
 https://youtu.be/lkgdwwAUCdQ
 
