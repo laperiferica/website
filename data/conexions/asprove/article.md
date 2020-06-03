@@ -1,5 +1,5 @@
 ---
 name: Asprove
-image: image.jpg
+image: Logo Asociación Aprove.png
 type: networks
 ---
