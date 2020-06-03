@@ -144,5 +144,6 @@ Más información sobre el programa Cuerpo Europeo de Solidaridad:
 http://www.cuerpoeuropeodesolidaridad.injuve.es/es
 
 ![](ces.png)
-![](erasmus.jpg)
+![](erasmus.JPG)
 ![](ane.jpg)
+![](injuve.jpg)
