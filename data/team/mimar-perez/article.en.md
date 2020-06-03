@@ -4,8 +4,8 @@ lang: en
 name: Mimar
 email: mimar@laperifericacc.com
 tasks:
-  - Diseño Gráfico
-  - Educación
+  - Graphic Design
+  - Education
 social:
   linkedin: none
   twitter: none
@@ -13,10 +13,9 @@ social:
 image: portrait.jpg
 ---
 
-Se titula en Diseño Gráfico y se Licenciada en Publicidad y Relaciones
-Públicas. En 2009 realiza un Voluntariado Europeo en Bulgaria gestionando
-proyectos socioculturales con colectivos en riesgo de exclusión social. En 2019
-realiza el master de Actitud Pedagógica en las Artes Plásticas en la
-Universidad de Granada y en 2012 trabaja como Subdirectora y Communication
-Officer en Kerala, India. Desde entonces hasta ahora trabaja en el mundo del
-marketing online así como en el sector docente.
+She graduated in Graphic Design at the [Almería School of Arts] (https://www.eaalmeria.es/) and holds a degree 
+in Advertising and Public Relations from the University of Alicante. In 2009, she carried out the European 
+Voluntary Service in Bulgaria managing sociocultural projects with groups at risk of social exclusion. 
+In 2019 she completed a Master Degree in Pedagogy in the field of Plastic Arts at the University of Granada. 
+In 2012 she worked as a Sub-editor and Communication Officer at Cenews (Cevex) in Kerala, India. Since then until 
+now she has worked in the area of online marketing as well as in the teaching sector.
