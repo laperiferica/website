@@ -13,15 +13,10 @@ social:
 image: portrait.jpg
 ---
 
-Licenciada en Humanidades por la [Universidad de Almería](https://www.ual.es/) y
-MBA en Empresas e Instituciones Culturales por la [Universidad Complutense de
-Madrid](https://www.ucm.es/). Su carrera como gestora cultural comienza en 2011
-como parte del equipo de coordinación de la Bienal Iberoamericana de Diseño 2012.
-En 2013 se incorpora al Centro Cultural de España en México, donde fue
-coordinadora del área de género y diversidad y asistente de la dirección del
-centro. Desde marzo de 2018 trabaja en la empresa [una más
-una](https://unamasuna.com/), donde realizó labores de gestión y producción
-cultural que compagina con la coordinación del Máster Propio en Gestión Cultural
-Internacional e Innovación Social de la [UCM](https://www.ucm.es/) y la
-organización de proyectos independientes, como el festival de animación
-contemporánea [ANIMASIVO](https://www.animasivo.net/).
+Bachelor in Arts in the [Universidad de Almería](https://www.ual.es/), [MBA in cultural organisations](http://www.mbagestioncultural.es/) in the Universidad Complutense de Madrid. She begins working in 2011 in Central de Diseño
+(Matadero Madrid) supporting the coordination and implementation of the 3a Bienal
+Iberoamericana de Diseño 2012 (BID12). In 2013 she moves to México and becomes
+part of the [Centro Cultural de España en México] (http://ccemx.org/) where she undertakes several
+tasks, first as the coordinator of the gender equality department, in 2016 as the
+head of the communication department, and finally as the assistant director of the
+cultural centre until November 2017. In March 2018 she joins [UNA MÁS UNA](https://unamasuna.com/) which she combines with the coordination of the UCM's[Master in International Cultural Management and Social Innovation] (mastergestionsectorculturalycreativo.com/) and the organization of independent projects, such as the contemporary animation festival [ANIMASIVO] (https://www.animasivo.net/)
