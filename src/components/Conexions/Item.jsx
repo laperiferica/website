@@ -44,14 +44,25 @@ const StyledItem = styled.li`
 
 const Item = ({ url, image, name, tags }) => (
   <StyledItem>
-    <BiLink url={url}>
-      <div className={'container'}>
-        <div className={'image'}>
-          <GatsbyImage fixed={image} alt={`Imágen de ${name}`} />
+    {url ? (
+      <BiLink url={url}>
+        <div className={'container'}>
+          <div className={'image'}>
+            <GatsbyImage fixed={image} alt={`Imágen de ${name}`} />
+          </div>
         </div>
-      </div>
-      <h4>{name}</h4>
-    </BiLink>
+        <h4>{name}</h4>
+      </BiLink>
+    ) : (
+      <>
+        <div className={'container'}>
+          <div className={'image'}>
+            <GatsbyImage fixed={image} alt={`Imágen de ${name}`} />
+          </div>
+        </div>
+        <h4>{name}</h4>
+      </>
+    )}
     {tags && (
       <ul>
         {tags.map((x, idx) => (
