@@ -8,23 +8,8 @@ gallery:
     image: featured.jpg
 ---
 
-In support of our friends from [CIC Batá](http://www.cicbata.org), the
-collective La Periférica managed the arrival in Almería of the audiovisual
-evenings for the presentation of Corresponsables. Under this name is a project
-that promotes audiovisual language and communication for social change in
-Andalusia.
+As a support to our friends of [CIC Batá](http://www.cicbata.org/), La Periférica managed the arrival in Almería of “veladas audiovisuales” (audiovisual evenings) and the presentation of Corresponsables (a mix between “correspondent” and “responsible”). Corresponsables is a project that promotes the use of audiovisuals and communication for social change in Andalusia.
 
-On the night of July 26, 2018, CIC Batá presented Corresponsables in the Plaza
-del [Museo de Almería](http://www.museosdeandalucia.es/web/museodealmeria). with
-an introductory talk in which the project was announced. The objective is based
-on favoring the creation of groups that reflect and act around the audiovisual
-for social change, proposing it from the perspective of the right to
-communication to promote new narratives.
+The evening of July 26th, 2018, CIC Batá presented Corresponsables in the Museo de Almería’s square with an introducing chat. The target is to favor the creation of groups in order to think and act about audiovisuals to social change, having in mind the right to communication and the new filming narratives.
 
-That summer night, 5 short films were shown, some of them the result of meetings
-of collective creation carried out by CIC Batá. Among the dozens of attendees
-were audiovisual filmmakers such as Juanjo Moya and members of the Invisible
-Cities collective. Together with them, together with the management of La
-Periférica and the collaboration of the Almería Museum, they achieved one of the
-objectives of this audiovisual evening: the creation of synergies between CIC
-Batá with social organizations, the media and creators audiovisuals.
+That summer evening 5 short movies were played, some of them came from those creation meetings arranged by CIC Batá. Among tens of assistants, there were filmmakers such as Juanjo Moya and members from associations like [Ciudades Invisibles](https://www.facebook.com/Ciudades-Invisibles-353172605493472/). They, plus La Periférica and the [Museo de Almería](http://www.museosdeandalucia.es/web/museodealmeria), accomplished the objectives of this “velada audiovisual”: generating synergies between CIC Batá, social organizations, mass media and filmmakers.
