@@ -6,6 +6,10 @@ image: image.jpg
 projects:
   - taste-of-diversity
 ---
+![](postal1.jpg)
+![](postal2.jpg)
+
+## ¿Qué es Erasmus+?
 
 **Erasmus +** es el Programa de educación, formación, juventud y deporte de la
 Comisión Europea para el período 2014-2020. Erasmus + ofrece más oportunidades
@@ -27,7 +31,7 @@ Documental "Taste of diversity: Arts, Environment and Gastronomy" realizado por
 la videoartista Inés Bermejo sobre la experiencia en Marruecos con el
 Intercambio Juvenil del programa Eramus +
 
-## ¿Cómo funciona el CES?
+## ¿Qué es el CES?
 
 **El Cuerpo Europeo de Solidaridad (CES)** es un programa de financiación de la Unión
 Europea que crea oportunidades para que los jóvenes hagan voluntariado,
