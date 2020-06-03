@@ -7,20 +7,11 @@ projects:
   - taste-of-diversity
 ---
 
-**Erasmus +** is the European Commission's Education, Training, Youth and Sport
-Program for the 2014-2020 period. Erasmus + offers more opportunities for
-mobility and cooperation in the education, training and youth sectors and is
-easier to access than its predecessors. The program is open to students,
-apprentices, teachers, professors, youth, volunteers, youth workers, and people
-working in sports. For more information on how to participate or be our partner
-in any of our projects, do not hesitate to contact us.
+**Erasmus +** Erasmus + is the European Commission's Education, Training, Youth and Sport Program for the 2014-2020 period. Erasmus + offers more opportunities for mobility and cooperation in the education, training and youth sectors and is easier to access than its predecessors. The program is open to students, apprentices, teachers, professors, youth, volunteers, youth workers, and people working in sports. For more information on how to participate or for being our partner in any of our projects, do not hesitate to contact us.
 
-More information about the Erasmus + program:
-http://www.erasmusplus.gob.es/index.html
+More information about the Erasmus + program: http://www.erasmusplus.gob.es/index.html
 
-Erasmus + project carried out by La Periférica: Tastes of Diversity: Arts,
-Environment and Gastronomy. Youth Exchange with Spain, Germany and Morocco. Made
-in the towns of Agdz and Timidarte in southern Morocco.
+Erasmus + project carried out by Omse e.V., IES Almeraya, La Guajira and La Periférica: Tastes of Diversity: Arts, Environment and Gastronomy. Youth Exchange with Spain, Germany and Morocco. Made in the towns of Agdz and Timidarte in southern Morocco.
 
 https://youtu.be/lkgdwwAUCdQ
 
@@ -30,15 +21,7 @@ the Eramus + program
 
 ## How the ESC works?
 
-**The European Solidarity Corps (ESC)** is a European Union funding program that
-creates opportunities for young people to volunteer, work, train and manage
-their own solidarity projects for the benefit of communities across Europe. The
-President of the European Commission, Jean-Claude Juncker, announced his
-creation in his annual State of the Union address, delivered in September 2016.
-The European Solidarity Corps officially became operational in December 2017.
-After a simple registration process, participants may be selected to join a
-whole series of projects. The projects of the European Solidarity Corps will be
-carried out by organizations duly accredited and authorized to carry them out.
+**The European Solidarity Corps (ESC)** is a European Union funding program that creates opportunities for young people to volunteer, work, train and manage their own solidarity projects for the benefit of communities across Europe. The European Solidarity Corps officially became operational in December 2017. After a simple registration process, participants may be selected to join a whole series of projects. The projects of the European Solidarity Corps will be carried out by organizations duly accredited and authorized to carry them out.
 
 ESC is a non-formal educational activity that allows young people **between the
 ages of 18 and 30** to express their personal commitment through a **long-term
@@ -64,13 +47,12 @@ or host volunteers.
 
 **The ESC program includes:**
 
-- The cost of round-trip transportation to and from the country of origin
-- Accommodation and food expenses during the project period An amount of pocket
-- money (varies according to the cost of living of the host
-  country)
-- Health insurance during the months of volunteering Online language training in
-- the language of the host country Tutoría personalizada con una persona
-- responsable en el proyecto de acogida
+- The cost of round-trip transportation to and from the country of origin 
+- Accommodation and food expenses during the project period
+- An amount of pocket money (varies according to the cost of living of the host country) 
+- Health insurance during the months of volunteering 
+- Online language training in the language of the host country 
+- Personalized tutoring with a responsible person in the host project
 
 **The following are part of the project:**
 
@@ -128,7 +110,7 @@ Skype interview to get to know you a little better and see your required
 language level. However, the ESC offers online language training in the language
 of the host country.
 
-**How do I apply for a ESC volunteer?** Contact us and we will tell you.
+**How do I apply for a ESC volunteer?** Contact us and we will help you out!
 
 More information on the European Solidarity Corps program:
 http://www.cuerpoeuropeodesolidaridad.injuve.es/es
