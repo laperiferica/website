@@ -7,7 +7,6 @@ projects:
   - taste-of-diversity
 ---
 ![](postal1.jpg)
-![](postal2.jpg)
 
 ## ¿Qué es Erasmus+?
 
@@ -30,6 +29,8 @@ https://youtu.be/lkgdwwAUCdQ
 Documental "Taste of diversity: Arts, Environment and Gastronomy" realizado por
 la videoartista Inés Bermejo sobre la experiencia en Marruecos con el
 Intercambio Juvenil del programa Eramus +
+
+![](postal2.jpg)
 
 ## ¿Qué es el CES?
 
