@@ -142,3 +142,7 @@ una formación lingüística online en el idioma del país de acogida.
 
 Más información sobre el programa Cuerpo Europeo de Solidaridad:
 http://www.cuerpoeuropeodesolidaridad.injuve.es/es
+
+![](ces.png)
+![](erasmus.jpg)
+![](ane.jpg)
