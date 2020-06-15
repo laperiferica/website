@@ -136,7 +136,9 @@ const ContactPage = ({ intl, data }) => (
     <StyledContactPage>
       <Section id={'email'} title={intl.formatMessage({ id: 'Contact' })}>
         <div className={'info'}>
-          <div className={'left'}>Puedes escribirnos a:</div>
+          <div className={'left'}>
+            {intl.formatMessage({ id: 'You can write us at:' })}
+          </div>
           <div className={'separator'} />
           <div className={'right'}>
             <a
@@ -148,9 +150,9 @@ const ContactPage = ({ intl, data }) => (
             </a>
           </div>
           <div className={'full'}>
-            ¡O puedes contactar con cada uno de nosotros!{' '}
+            {intl.formatMessage({ id: 'Or you can contact each of us!' })}{' '}
             <span className={'only-mobile'}>
-              (Pincha sobre nuestras siluetas)
+              {intl.formatMessage({ id: '(Click on our silhouettes)' })}
             </span>
           </div>
         </div>
