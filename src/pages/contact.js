@@ -149,17 +149,19 @@ const ContactPage = ({ intl, data }) => (
               {meta.email}
             </a>
           </div>
+          {/*
           <div className={'full'}>
             {intl.formatMessage({ id: 'Or you can contact each of us!' })}{' '}
             <span className={'only-mobile'}>
               {intl.formatMessage({ id: '(Click on our silhouettes)' })}
             </span>
           </div>
+          */}
         </div>
 
         <div className={'image'}>
           <img src={image} alt={'Foto del equipo'} />
-          {data.team.edges.map((x, idx) => {
+          {/* data.team.edges.map((x, idx) => {
             const { pos, align } = teamMeta[x.node.frontmatter.slug];
             return (
               <div
@@ -181,7 +183,7 @@ const ContactPage = ({ intl, data }) => (
                 </a>
               </div>
             );
-          })}
+          })*/}
         </div>
 
         <div className={'image-mobile'}>
@@ -192,8 +194,8 @@ const ContactPage = ({ intl, data }) => (
             viewBox="0 0 1024 610"
             preserveAspectRatio="xMinYMin meet"
           >
-            <image width="1024" height="610" xlinkHref={imageMobile} />
-            {data.team.edges.map((x, idx) => {
+            <image width="1024" height="610" xlinkHref={image} />
+            {/* data.team.edges.map((x, idx) => {
               const { poly } = teamMeta[x.node.frontmatter.slug];
               return (
                 <g className="member" key={idx}>
@@ -211,7 +213,7 @@ const ContactPage = ({ intl, data }) => (
                   </a>
                 </g>
               );
-            })}
+            })*/}
           </svg>
         </div>
       </Section>

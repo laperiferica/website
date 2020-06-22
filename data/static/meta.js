@@ -2,7 +2,7 @@ import React from 'react';
 import { FaYoutube, FaTwitter, FaInstagram, FaFacebook } from 'react-icons/fa';
 
 export default {
-  email: 'info@laperifericacc.com',
+  email: 'info.laperiferica@gmail.com',
   social: [
     {
       url: 'https://www.youtube.com/channel/UCo0LamWRwdLSfO3o_Ob3-WQ',
